@@ -1,0 +1,2084 @@
+[
+  {
+    "id": "exam_1",
+    "title": "The Long-Term Study Roadmap",
+    "category": "Exam & Test Prep",
+    "useCase": "Planning a multi-month study schedule for a major standardized test.",
+    "promptText": "I am preparing for a major exam ([Insert Exam, e.g., GATE CSE]) which is [Insert Number] months away. Create a comprehensive, week-by-week roadmap. Break down the core subjects (like [Insert Subjects, e.g., Data Structures, OS, DBMS]), allocate time based on topic weight and difficulty, and include specific milestones for completing previous year questions (PYQs) and mock tests.",
+    "proTip": "Use this as your master blueprint. You can ask the AI to regenerate specific weeks if you fall behind."
+  },
+  {
+    "id": "exam_2",
+    "title": "The Feynman Concept Breakdown",
+    "category": "Exam & Test Prep",
+    "useCase": "Mastering difficult theoretical concepts.",
+    "promptText": "Explain [Insert Concept, e.g., Paging and Segmentation] using the Feynman Technique. Start with a very simple analogy. Then, explain it again using the proper technical terminology required for an exam. Finally, give me a challenging scenario-based question to test if I actually understand it.",
+    "proTip": "Don't just read the explanation—actually try to answer the test question at the end."
+  },
+  {
+    "id": "exam_3",
+    "title": "The Active Recall Generator",
+    "category": "Exam & Test Prep",
+    "useCase": "Creating flashcards or self-test questions from textbook notes.",
+    "promptText": "I am pasting my notes on [Insert Topic] below. Generate 10 difficult 'Active Recall' questions based on this text. Format the output with the questions first. Put the answers at the very bottom of the response so I am forced to guess them before checking. Notes: [Insert Notes]",
+    "proTip": "Active recall is scientifically proven to be more effective than just re-reading your notes."
+  },
+  {
+    "id": "exam_4",
+    "title": "The Weakness Diagnoser",
+    "category": "Exam & Test Prep",
+    "useCase": "Understanding why you keep getting a specific type of question wrong.",
+    "promptText": "I am struggling with [Insert Topic, e.g., finding the time complexity of recursive algorithms]. Here is a problem I got wrong: [Insert Problem], and here was my thought process/answer: [Insert Your Answer]. Do not just give me the correct answer. Tell me exactly where my fundamental misunderstanding lies and explain the core rule I am forgetting.",
+    "proTip": "This turns the AI into a personalized tutor that fixes the root cause of your mistakes."
+  },
+  {
+    "id": "exam_5",
+    "title": "The Theorem & Formula Explainer",
+    "category": "Exam & Test Prep",
+    "useCase": "Memorizing complex formulas by understanding their derivations.",
+    "promptText": "I need to memorize [Insert Formula/Theorem, e.g., Master Theorem or Bayes' Theorem] for an exam. Break down this formula part by part. What does each variable represent in plain English? Explain the intuition behind why this formula works, rather than just giving me the mathematical proof.",
+    "proTip": "Understanding the 'why' makes remembering the 'what' much easier during a stressful exam."
+  },
+  {
+    "id": "exam_6",
+    "title": "The Past-Paper Pattern Analyzer",
+    "category": "Exam & Test Prep",
+    "useCase": "Identifying high-yield topics from past exam questions.",
+    "promptText": "Here are 5 essay questions/problems from previous years' exams on the subject of [Insert Subject]: [Insert Questions]. Analyze these questions and tell me what specific core concepts the examiner is clearly prioritizing. What should I focus my remaining study time on based on these patterns?",
+    "proTip": "Examiners often test the same core principles using different wrappers. This finds the core."
+  },
+  {
+    "id": "exam_7",
+    "title": "The 'Cheat Sheet' Synthesizer",
+    "category": "Exam & Test Prep",
+    "useCase": "Condensing a massive chapter into a one-page review sheet.",
+    "promptText": "I need to create a 1-page quick-review cheat sheet for [Insert Topic, e.g., Sorting Algorithms]. Extract the absolute most important definitions, rules, time/space complexities, and edge cases. Format this as a highly structured, dense markdown table or bulleted list.",
+    "proTip": "Review this generated cheat sheet 30 minutes before walking into the exam hall."
+  },
+  {
+    "id": "exam_8",
+    "title": "The Concept Comparator",
+    "category": "Exam & Test Prep",
+    "useCase": "Distinguishing between two very similar concepts that confuse you.",
+    "promptText": "I always get confused between [Concept A, e.g., Mutex] and [Concept B, e.g., Semaphore]. Create a strict comparison table highlighting their differences in definition, use-case, and limitations. Then, give me a trick or mnemonic to remember which is which.",
+    "proTip": "Comparing two things forces your brain to categorize them, preventing mix-ups on multiple-choice tests."
+  },
+  {
+    "id": "exam_9",
+    "title": "The Edge-Case Tester",
+    "category": "Exam & Test Prep",
+    "useCase": "Preparing for trick questions designed to trap students.",
+    "promptText": "I understand the basics of [Insert Topic, e.g., Binary Search Trees]. Now, I want you to test me on the edge cases. Give me 3 tricky, exception-to-the-rule scenarios that professors love to put on advanced exams to trip up students.",
+    "proTip": "This prepares you for the hardest 10% of the exam that separates top scorers from the rest."
+  },
+  {
+    "id": "exam_10",
+    "title": "The Explain-Like-I'm-5 (ELI5)",
+    "category": "Exam & Test Prep",
+    "useCase": "Breaking through a mental block on a confusing topic.",
+    "promptText": "I am completely stuck on [Insert Topic, e.g., Neural Network Backpropagation]. Explain it to me like I am 5 years old. Use zero jargon. Use a real-world, physical analogy that a child could understand.",
+    "proTip": "Use this when you hit a wall. You can ask it to slowly increase the academic level once you grasp the ELI5 version."
+  },
+  {
+    "id": "exam_11",
+    "title": "The Spaced Repetition Scheduler",
+    "category": "Exam & Test Prep",
+    "useCase": "Optimizing review times to combat the forgetting curve.",
+    "promptText": "I just finished studying [Insert Topic]. I have an exam on [Insert Date]. Design a spaced repetition study schedule for this specific topic leading up to the exam. Tell me exactly which dates I need to review this material to maximize long-term retention.",
+    "proTip": "Pair this with a calendar app to automate your review reminders."
+  },
+  {
+    "id": "exam_12",
+    "title": "The Multiple-Choice Trap Finder",
+    "category": "Exam & Test Prep",
+    "useCase": "Learning how to eliminate distractor answers.",
+    "promptText": "Generate a highly difficult multiple-choice question about [Insert Topic]. Include 4 options. Make sure 2 of the incorrect options are 'distractors'—answers that look right if you make a common mistake. After I guess, explain the psychology behind why those distractors were chosen.",
+    "proTip": "Improves your test-taking strategy, not just your subject knowledge."
+  },
+  {
+    "id": "exam_13",
+    "title": "The Mnemonic Generator",
+    "category": "Exam & Test Prep",
+    "useCase": "Memorizing long lists or orders of operations.",
+    "promptText": "I need to memorize this exact list in order: [Insert List, e.g., The 7 layers of the OSI model]. Create 3 different memorable mnemonics for this. Make one funny, make one logical, and make one bizarre.",
+    "proTip": "The more ridiculous the mnemonic, the easier it is to remember under pressure."
+  },
+  {
+    "id": "exam_14",
+    "title": "The Blank-Page Braindump Assessor",
+    "category": "Exam & Test Prep",
+    "useCase": "Testing true, unassisted recall.",
+    "promptText": "I just did a 'braindump' where I wrote down everything I know about [Insert Topic] from memory. Here is my text: [Insert Text]. Review my braindump. Tell me what key information I completely forgot to include, and correct any factual errors I made.",
+    "proTip": "Do a braindump on a blank sheet of paper, type it up quickly, and use this prompt to find your blind spots."
+  },
+  {
+    "id": "exam_15",
+    "title": "The Theory-to-Application Bridge",
+    "category": "Exam & Test Prep",
+    "useCase": "Preparing for application-based exam questions.",
+    "promptText": "I know the theory behind [Insert Concept, e.g., Object-Oriented Programming Principles]. Now, give me a practical, real-world engineering problem where I have to apply this theory to solve it. Grade my approach once I respond.",
+    "proTip": "Crucial for university-level exams that test application over rote memorization."
+  },
+  {
+    "id": "exam_16",
+    "title": "The Time-Crunch Simulator",
+    "category": "Exam & Test Prep",
+    "useCase": "Practicing speed and accuracy for timed tests.",
+    "promptText": "Act as a timed exam simulator. Give me 5 rapid-fire questions on [Insert Topic]. I will answer them all at once. My goal is to answer them in under [Insert Time, e.g., 3 minutes]. Go.",
+    "proTip": "Use this to overcome test anxiety and get used to retrieving information quickly."
+  },
+  {
+    "id": "exam_17",
+    "title": "The Grading Rubric Reverse-Engineer",
+    "category": "Exam & Test Prep",
+    "useCase": "Writing better subjective/essay answers.",
+    "promptText": "I have to write an essay/long-form answer on [Insert Topic]. If you were the strict professor grading this, what specific keywords, structural elements, and arguments would you require to give this a perfect 10/10? Provide the ideal grading rubric.",
+    "proTip": "Write your answer specifically to satisfy the generated rubric."
+  },
+  {
+    "id": "exam_18",
+    "title": "The 'Devil's Advocate' Debater",
+    "category": "Exam & Test Prep",
+    "useCase": "Deepening understanding by defending your knowledge.",
+    "promptText": "I believe that [Insert Statement/Fact, e.g., normalization is always required in database design]. Play devil's advocate and argue aggressively against my point. I will defend my stance, and you will grade how well I hold up against your arguments.",
+    "proTip": "Defending a concept solidifies it in your memory far better than passive reading."
+  },
+  {
+    "id": "exam_19",
+    "title": "The Study Session Warm-Up",
+    "category": "Exam & Test Prep",
+    "useCase": "Getting into the zone before a long study block.",
+    "promptText": "I am about to start a 2-hour study session on [Insert Subject]. Ask me 3 quick, easy, fundamental questions to warm up my brain and get me into the context of the subject.",
+    "proTip": "Prevents the 'blank stare' when you first open your textbook."
+  },
+  {
+    "id": "exam_20",
+    "title": "The Exam Day Strategy Coach",
+    "category": "Exam & Test Prep",
+    "useCase": "Planning how to tackle the actual test paper.",
+    "promptText": "My exam is structured like this: [Insert Structure, e.g., 65 questions, 3 hours, negative marking for wrong answers]. What is the mathematically and psychologically optimal strategy for navigating this paper? How should I allocate my time, and when should I guess vs. skip?",
+    "proTip": "A good strategy can save you points even if you don't know all the answers."
+  },
+  {
+    "id": "code_1",
+    "title": "The Socratic Debugger",
+    "category": "Coding & Debugging",
+    "useCase": "Finding logic errors without the AI just giving you the answer.",
+    "promptText": "Here is my [Insert Language, e.g., Python] code: [Insert Code]. It is supposed to [Insert Expected Output], but it is doing [Insert Actual Output]. Act as a Socratic tutor. Do NOT rewrite the code for me. Instead, ask me a guiding question that points me toward the line where my logic is failing.",
+    "proTip": "This builds actual problem-solving muscles instead of relying on AI as a crutch."
+  },
+  {
+    "id": "code_2",
+    "title": "The Big O Analyzer",
+    "category": "Coding & Debugging",
+    "useCase": "Optimizing algorithmic efficiency for interviews or competitive programming.",
+    "promptText": "Analyze the time and space complexity of my following [Insert Language] code: [Insert Code]. Break down exactly why it has this complexity step-by-step. Then, suggest one way I could refactor this to optimize its Big O performance, and explain the trade-offs of that optimization.",
+    "proTip": "Crucial for passing technical interviews where brute-force solutions aren't enough."
+  },
+  {
+    "id": "code_3",
+    "title": "The Stack Trace Translator",
+    "category": "Coding & Debugging",
+    "useCase": "Deciphering massive, intimidating error logs.",
+    "promptText": "I am getting this error traceback in my [Insert Framework/Language] application: [Insert Stack Trace]. Translate this error into plain English. What is the root cause, which specific line of my code triggered it, and what are the top 3 most common reasons this error occurs?",
+    "proTip": "Saves you 30 minutes of scrolling through Stack Overflow trying to match your exact error."
+  },
+  {
+    "id": "code_4",
+    "title": "The Clean Code Refactorer",
+    "category": "Coding & Debugging",
+    "useCase": "Making messy code professional and readable.",
+    "promptText": "Here is a working piece of [Insert Language] code: [Insert Code]. It works, but it is messy. Refactor this code to follow standard industry best practices (like PEP 8 for Python or SOLID principles). Explain every change you made and why it makes the code more maintainable.",
+    "proTip": "Use this before pushing code to a repository or adding it to your personal portfolio."
+  },
+  {
+    "id": "code_5",
+    "title": "The Language Rosetta Stone",
+    "category": "Coding & Debugging",
+    "useCase": "Translating logic from a language you know to one you are learning.",
+    "promptText": "I know how to write this logic in [Insert Known Language, e.g., Java]: [Insert Code]. I am trying to learn [Insert Target Language, e.g., Python]. Translate this exact logic into idiomatic [Target Language]. Highlight any language-specific features you used that don't exist in the original language.",
+    "proTip": "The fastest way to learn a new language is to map it directly to one you already understand."
+  },
+  {
+    "id": "code_6",
+    "title": "The ML Model Diagnoser",
+    "category": "Coding & Debugging",
+    "useCase": "Figuring out why a machine learning model is performing poorly.",
+    "promptText": "I am training a [Insert Model Type, e.g., Random Forest / Neural Network] for [Insert Task, e.g., emotion detection / prediction]. My training accuracy is [Insert %] but my validation accuracy is [Insert %]. Based on this, diagnose what might be happening (e.g., overfitting, data leakage) and suggest 3 specific hyperparameter adjustments or data preprocessing steps I should try.",
+    "proTip": "Helps you stop blindly tweaking parameters and start tuning with a strategy."
+  },
+  {
+    "id": "code_7",
+    "title": "The SQL Query Optimizer",
+    "category": "Coding & Debugging",
+    "useCase": "Speeding up slow database queries.",
+    "promptText": "Here is my database schema: [Insert Schema details]. I am running this SQL query: [Insert Query]. It is taking too long to execute. Explain how the database engine is likely processing this query, and rewrite it to be more efficient. Suggest any indexes I should add.",
+    "proTip": "Essential for backend web development and database management system (DBMS) exams."
+  },
+  {
+    "id": "code_8",
+    "title": "The Regex Demystifier",
+    "category": "Coding & Debugging",
+    "useCase": "Understanding or writing complex Regular Expressions.",
+    "promptText": "I need a Regular Expression in [Insert Language] to match the following pattern: [Describe Pattern, e.g., valid email addresses ending in .edu]. Write the regex and break it down character-by-character so I understand exactly how it works. Provide 3 matching test cases and 3 failing test cases.",
+    "proTip": "Never blindly copy-paste Regex again. This forces you to understand the syntax."
+  },
+  {
+    "id": "code_9",
+    "title": "The Edge-Case Hunter",
+    "category": "Coding & Debugging",
+    "useCase": "Preventing your app from breaking in production.",
+    "promptText": "Here is a function I wrote to handle [Insert Task]: [Insert Code]. Act as a QA tester trying to break my code. List 5 weird, obscure edge-cases or unexpected inputs that would cause this function to fail, crash, or return incorrect data.",
+    "proTip": "Run your core logic through this before calling a project 'finished'."
+  },
+  {
+    "id": "code_10",
+    "title": "The Unit Test Generator",
+    "category": "Coding & Debugging",
+    "useCase": "Quickly scaffolding test suites for your functions.",
+    "promptText": "Here is my [Insert Language] function: [Insert Code]. Write a complete suite of unit tests for this function using [Insert Testing Framework, e.g., PyTest or JUnit]. Include tests for the happy path, edge cases, and expected exceptions.",
+    "proTip": "Writing tests is tedious. Let the AI write the boilerplate so you can focus on the logic."
+  },
+  {
+    "id": "code_11",
+    "title": "The Architecture Critic",
+    "category": "Coding & Debugging",
+    "useCase": "Validating the structure of a new full-stack project.",
+    "promptText": "I am planning to build a [Insert Project, e.g., personal portfolio with a 3D model showcase]. I plan to use [Insert Tech Stack, e.g., React, Three.js, Node.js]. Critique this architecture. What are the potential bottlenecks? Is there a lighter-weight alternative I should consider for this specific use case?",
+    "proTip": "Measure twice, cut once. Use this before setting up your repository."
+  },
+  {
+    "id": "code_12",
+    "title": "The UI/CSS Fixer",
+    "category": "Coding & Debugging",
+    "useCase": "Solving frustrating frontend layout issues.",
+    "promptText": "I am trying to build a [Insert UI Element, e.g., responsive navigation bar] using [Insert CSS Framework, e.g., Tailwind CSS / Vanilla CSS]. I want it to [Describe desired look], but currently it is [Describe issue]. Here is my code: [Insert Code]. Tell me which CSS property is causing the conflict and how to fix it.",
+    "proTip": "Saves hours of blindly changing 'flex' and 'absolute' properties."
+  },
+  {
+    "id": "code_13",
+    "title": "The Explain-Like-I'm-5 Code Reader",
+    "category": "Coding & Debugging",
+    "useCase": "Understanding complex open-source code or a teammate's pull request.",
+    "promptText": "I am reading this piece of code and I don't understand how it works: [Insert Code]. Go through it line-by-line and explain what it is doing in plain, non-technical English. What is the ultimate goal of this block of code?",
+    "proTip": "Great for learning advanced techniques by reverse-engineering other people's code."
+  },
+  {
+    "id": "code_14",
+    "title": "The Design Pattern Matcher",
+    "category": "Coding & Debugging",
+    "useCase": "Applying Object-Oriented Programming (OOP) concepts correctly.",
+    "promptText": "I am building a system that needs to [Describe the problem, e.g., notify multiple users when a database updates]. What standard software design pattern (e.g., Observer, Singleton, Factory) is best suited for this problem? Explain how the pattern works in this context and give a skeleton code example in [Insert Language].",
+    "proTip": "Elevates your code from 'scripting' to professional 'software engineering'."
+  },
+  {
+    "id": "code_15",
+    "title": "The API Integration Planner",
+    "category": "Coding & Debugging",
+    "useCase": "Connecting your app to external services safely.",
+    "promptText": "I need to integrate the [Insert API Name, e.g., Stripe / TMDB] API into my [Insert Language] backend. Outline the exact steps I need to take. Include how to securely store the API keys, handle rate limiting, and write a basic fetch/request block with proper error handling.",
+    "proTip": "Treats API documentation like a clear, actionable checklist."
+  },
+  {
+    "id": "code_16",
+    "title": "The Git Rescue Mission",
+    "category": "Coding & Debugging",
+    "useCase": "Fixing terrifying version control mistakes.",
+    "promptText": "I messed up my Git repository. I accidentally [Describe mistake, e.g., committed sensitive data / merged the wrong branch]. Here is the current state of my branches and my last few commands: [Insert Context]. Give me the exact, safe terminal commands to undo this without losing my actual code changes.",
+    "proTip": "Always read the explanation of the Git commands before running them so you learn how to fix it next time."
+  },
+  {
+    "id": "code_17",
+    "title": "The Code Documenter",
+    "category": "Coding & Debugging",
+    "useCase": "Generating professional comments and docstrings.",
+    "promptText": "Here is a completed [Insert Language] script: [Insert Code]. Add professional, industry-standard docstrings and inline comments. Explain the parameters, return types, and the general logic flow without cluttering the file with obvious comments.",
+    "proTip": "Makes your GitHub portfolio look highly professional to recruiters."
+  },
+  {
+    "id": "code_18",
+    "title": "The Security Auditor",
+    "category": "Coding & Debugging",
+    "useCase": "Finding vulnerabilities before deploying.",
+    "promptText": "Review this [Insert Language] code handling user input/authentication: [Insert Code]. Act as a cybersecurity auditor. Identify any potential vulnerabilities (like SQL injection, XSS, or improper token handling) and show me exactly how to patch them.",
+    "proTip": "Never deploy web applications handling user data without running a basic security check."
+  },
+  {
+    "id": "code_19",
+    "title": "The 'Will It Scale?' Tester",
+    "category": "Coding & Debugging",
+    "useCase": "Thinking beyond the local development environment.",
+    "promptText": "My code currently works for 100 users: [Insert Code or Architecture outline]. What will break, slow down, or crash if this suddenly gets 100,000 concurrent users? Identify the architectural bottlenecks and suggest scalable solutions (e.g., caching, load balancing).",
+    "proTip": "Excellent mental exercise for system design interviews."
+  },
+  {
+    "id": "code_20",
+    "title": "The Variable Naming Assistant",
+    "category": "Coding & Debugging",
+    "useCase": "Solving the hardest problem in computer science: naming things.",
+    "promptText": "I have a function that [Describe what the function does]. It takes variables currently named 'x', 'y', and 'data'. Suggest 5 sets of highly descriptive, clean-code variable and function names that make the code self-documenting.",
+    "proTip": "Good naming conventions eliminate the need for excessive comments."
+  },
+  {
+    "id": "career_1",
+    "title": "The Resume Roaster",
+    "category": "Career & Interviews",
+    "useCase": "Getting a brutally honest critique of your resume before applying.",
+    "promptText": "Act as a ruthless, senior technical recruiter for a top-tier tech company. Review my resume below. Tear it apart. Point out every weak action verb, vague metric, and formatting flaw. Do not hold back. Then, give me 3 actionable steps to make my top project sound more impressive. Resume: [Insert Resume Text]",
+    "proTip": "It’s better to get 'roasted' by an AI in private than rejected by an ATS tracker in public."
+  },
+  {
+    "id": "career_2",
+    "title": "The STAR Method Coach",
+    "category": "Career & Interviews",
+    "useCase": "Structuring perfect behavioral interview answers.",
+    "promptText": "I am preparing for a behavioral interview for a [Insert Role, e.g., Software Developer] position. Ask me a common behavioral question (like 'Tell me about a time you failed'). I will provide a rough answer. Then, rewrite my answer using the strict STAR framework (Situation, Task, Action, Result) and tell me what critical details I forgot to include.",
+    "proTip": "The STAR method is the industry standard. Use this prompt to train your brain to speak in that format automatically."
+  },
+  {
+    "id": "career_3",
+    "title": "The Mock Technical Interviewer",
+    "category": "Career & Interviews",
+    "useCase": "Simulating a high-pressure technical screening.",
+    "promptText": "Act as a Hiring Manager interviewing me for a [Insert Role, e.g., Machine Learning Engineer] role. The core technologies required are [Insert Tech, e.g., Python, TensorFlow, SQL]. Ask me one technical interview question at a time. Wait for my answer. Critique my logic, point out edge cases I missed, and then ask a follow-up question. Do not break character.",
+    "proTip": "Treat this exactly like a real interview. Type your answers without looking up documentation."
+  },
+  {
+    "id": "career_4",
+    "title": "The Project Impact Quantifier",
+    "category": "Career & Interviews",
+    "useCase": "Translating simple coding projects into business value.",
+    "promptText": "I built a project: [Describe Project, e.g., an Emotion Detection System using ML]. Right now, my resume just says 'Built an app using Python'. Help me quantify the impact of this project. Give me 5 examples of impressive, metric-driven bullet points I could use, assuming realistic benchmarks for performance, accuracy, or efficiency.",
+    "proTip": "Recruiters look for numbers and impact, not just a list of the programming languages you used."
+  },
+  {
+    "id": "career_5",
+    "title": "The ATS Keyword Scanner",
+    "category": "Career & Interviews",
+    "useCase": "Tailoring your resume to a specific job description to beat the bots.",
+    "promptText": "Here is a job description I want to apply for: [Insert Job Description]. And here is my current resume: [Insert Resume Text]. Identify the top 10 core keywords and skills missing from my resume that the Applicant Tracking System (ATS) will be looking for. Suggest where I can naturally weave them into my existing experience.",
+    "proTip": "Never lie to an ATS, but always use the exact terminology the job posting uses (e.g., 'API Integration' vs 'Connected APIs')."
+  },
+  {
+    "id": "career_6",
+    "title": "The System Design Simulator",
+    "category": "Career & Interviews",
+    "useCase": "Practicing architecture rounds for mid-level or senior roles.",
+    "promptText": "Give me a classic System Design interview prompt (e.g., Design Twitter, Design a global URL shortener). I will outline the high-level architecture, database schema, and scaling strategy. Act as the interviewer and challenge my design, specifically questioning my choices regarding load balancing, database scaling, and latency.",
+    "proTip": "Focus on the trade-offs. The AI will push back; be prepared to defend why you chose NoSQL over SQL, for instance."
+  },
+  {
+    "id": "career_7",
+    "title": "The Portfolio Elevator Pitch",
+    "category": "Career & Interviews",
+    "useCase": "Explaining complex personal projects succinctly to non-technical recruiters.",
+    "promptText": "I need a 30-second elevator pitch for my portfolio project: [Describe Project, e.g., an IPL Match Prediction Model]. Write three versions of this pitch: One for a highly technical Engineering Manager, one for a non-technical HR Recruiter, and one for a casual networking event.",
+    "proTip": "Knowing your audience is critical. You shouldn't explain hyperparameter tuning to an HR recruiter."
+  },
+  {
+    "id": "career_8",
+    "title": "The 'Tell Me About Yourself' Sculptor",
+    "category": "Career & Interviews",
+    "useCase": "Nailing the first and most important question of any interview.",
+    "promptText": "I am applying for [Insert Target Role]. Here is a messy brain-dump of my background, education, and passions: [Insert Background]. Distill this into a powerful, 90-second 'Tell me about yourself' narrative. It should highlight my trajectory, why I am passionate about this field, and end with why I am excited about this specific role.",
+    "proTip": "The goal is a cohesive narrative, not a chronological reading of your resume."
+  },
+  {
+    "id": "career_9",
+    "title": "The Whiteboard Coder",
+    "category": "Career & Interviews",
+    "useCase": "Practicing algorithmic problem solving without an IDE.",
+    "promptText": "Give me a medium-difficulty LeetCode-style problem related to [Insert Topic, e.g., Trees, Dynamic Programming]. I will write the solution in plain text. Act as the interviewer: analyze my time/space complexity, point out syntax errors I'd normally rely on an IDE to catch, and suggest optimal refactors.",
+    "proTip": "Whiteboard coding tests your thought process more than your syntax memory. Explain your logic as you type."
+  },
+  {
+    "id": "career_10",
+    "title": "The 'I Don't Know' Strategist",
+    "category": "Career & Interviews",
+    "useCase": "Handling interview questions you have no idea how to answer gracefully.",
+    "promptText": "I am in a technical interview and the interviewer just asked me a question about [Insert Obscure Topic] that I do not know the answer to. Give me 3 professional ways to pivot, admit I don't know the exact answer, but showcase my problem-solving process to figure it out.",
+    "proTip": "Saying 'I don't know, but here is how I would find out' is infinitely better than freezing or lying."
+  },
+  {
+    "id": "career_11",
+    "title": "The Cold Outreach Crafter",
+    "category": "Career & Interviews",
+    "useCase": "Networking with alumni or engineers on LinkedIn.",
+    "promptText": "I want to send a cold LinkedIn message to a [Insert Role, e.g., Senior Developer] at [Insert Company]. I am a student looking for a short informational interview, NOT asking for a job directly. Write a concise, 4-sentence outreach message that is highly personalized, respectful of their time, and has a clear call to action.",
+    "proTip": "Keep it short. Busy professionals ignore long walls of text from strangers."
+  },
+  {
+    "id": "career_12",
+    "title": "The Salary Negotiator",
+    "category": "Career & Interviews",
+    "useCase": "Practicing the most uncomfortable conversation in the hiring process.",
+    "promptText": "I have received a job offer for [Insert Role] offering [Insert Salary]. Based on market research, I want to ask for [Insert Target Salary]. Act as the HR representative. I will pitch my counter-offer. You will push back with a common HR objection (e.g., 'budget constraints'). Let's roleplay the negotiation.",
+    "proTip": "Roleplaying this reduces the anxiety of doing it for real. Always anchor your negotiation in the value you bring, not your personal expenses."
+  },
+  {
+    "id": "career_13",
+    "title": "The Reverse Interviewer",
+    "category": "Career & Interviews",
+    "useCase": "Asking the employer high-quality questions at the end of the interview.",
+    "promptText": "I am interviewing for a [Insert Role] at a [Insert Company Type, e.g., fast-paced startup / large enterprise]. Generate 5 highly insightful, non-generic questions I can ask the interviewer at the end. These questions should help me uncover the real engineering culture, work-life balance, and tech debt.",
+    "proTip": "An interview is a two-way street. Asking insightful questions proves you are evaluating them just as hard as they are evaluating you."
+  },
+  {
+    "id": "career_14",
+    "title": "The Tech Stack Defender",
+    "category": "Career & Interviews",
+    "useCase": "Explaining why you chose specific tools for your personal projects.",
+    "promptText": "In my portfolio, I built a [Insert Project, e.g., recipe website] using [Insert Tech Stack, e.g., React and Node.js]. Play the role of a skeptical Senior Engineer. Grill me on why I chose those specific tools over alternatives (like Vue or Django). I will defend my choices, and you will grade my reasoning.",
+    "proTip": "'Because I saw it in a tutorial' is not a valid answer. You must learn to articulate engineering trade-offs."
+  },
+  {
+    "id": "career_15",
+    "title": "The Behavioral Red Flag Checker",
+    "category": "Career & Interviews",
+    "useCase": "Ensuring your answers don't accidentally make you look difficult to work with.",
+    "promptText": "Here is my drafted answer to the interview question 'Tell me about a time you had a conflict with a teammate': [Insert Answer]. Analyze this answer. Does it contain any hidden 'red flags'? Do I sound too defensive, arrogant, or passive? Suggest tweaks to make me sound collaborative and mature.",
+    "proTip": "Self-awareness is key. You never want to sound like you are blaming others, even if they were in the wrong."
+  },
+  {
+    "id": "career_16",
+    "title": "The Transition Storyteller",
+    "category": "Career & Interviews",
+    "useCase": "Explaining a pivot from one field or major to another.",
+    "promptText": "My background is in [Insert Previous Field/Major], but I am applying for jobs in [Insert New Field, e.g., Software Engineering]. Help me craft a compelling narrative that connects the two. What transferable skills from my past make me uniquely valuable in my new chosen career path?",
+    "proTip": "Don't hide your past; leverage it. Diverse backgrounds often bring unique problem-solving perspectives."
+  },
+  {
+    "id": "career_17",
+    "title": "The Take-Home Assignment Reviewer",
+    "category": "Career & Interviews",
+    "useCase": "Sanity-checking a technical challenge before submission.",
+    "promptText": "I completed a take-home coding assignment for a job application. The prompt was [Insert Prompt]. Here is my core logic/code: [Insert Code]. Act as the grading engineer. Did I miss any obvious edge cases, ignore standard conventions, or over-engineer the solution? Provide a critique before I submit it.",
+    "proTip": "Always have a second pair of 'eyes' check for readability and simplicity. Over-engineering is a common reason take-homes fail."
+  },
+  {
+    "id": "career_18",
+    "title": "The Recruiter Translation Matrix",
+    "category": "Career & Interviews",
+    "useCase": "Decoding vague rejection emails or interview feedback.",
+    "promptText": "I received this feedback from a recruiter after an interview: '[Insert Feedback, e.g., We are looking for someone with more end-to-end ownership]'. Translate this corporate jargon into plain English. What exactly did I fail to demonstrate during the interview, and how do I fix it for the next one?",
+    "proTip": "Recruiters use polite language to soften the blow. This prompt helps you extract the actual actionable critique."
+  },
+  {
+    "id": "career_19",
+    "title": "The Live Debugging Coach",
+    "category": "Career & Interviews",
+    "useCase": "Practicing the 'think-aloud' protocol for pair programming interviews.",
+    "promptText": "Give me a piece of broken code in [Insert Language] containing a logical bug. I will read through it and 'think aloud' by typing my thought process step-by-step as I try to find the bug. Grade my communication skills. Am I explaining my hypothesis clearly before making changes?",
+    "proTip": "In pair programming interviews, *how* you communicate your debugging process is often more important than fixing the bug immediately."
+  },
+  {
+    "id": "career_20",
+    "title": "The 30-60-90 Day Plan Generator",
+    "category": "Career & Interviews",
+    "useCase": "Standing out in the final round with a concrete action plan.",
+    "promptText": "I am in the final interview round for a [Insert Target Role] at [Insert Target Company]. Help me generate a realistic 30-60-90 day plan that I can present to the hiring manager. Focus on onboarding, delivering an early win, and taking ownership of a specific metric.",
+    "proTip": "Bringing a 30-60-90 day plan to a final round shows immense proactivity and sets you apart from 99% of other candidates."
+  },
+  {
+    "id": "arch_1",
+    "title": "The Tech Stack Matchmaker",
+    "category": "Project Architecture",
+    "useCase": "Choosing the absolute best tools for a new project before writing code.",
+    "promptText": "I am building a [Insert Project, e.g., personal portfolio with a 3D model showcase]. My primary goals are fast loading times and ease of deployment. I am considering using [Insert Tools, e.g., React, Three.js, and Vercel]. Validate this tech stack. Are there better, more modern alternatives I should consider for this specific use case? What are the trade-offs?",
+    "proTip": "Never choose a framework just because it's popular; choose it because it fits the specific problem you are solving."
+  },
+  {
+    "id": "arch_2",
+    "title": "The Database Schema Sculptor",
+    "category": "Project Architecture",
+    "useCase": "Designing a bulletproof database relationship model.",
+    "promptText": "I need to design the database schema for a [Insert Project, e.g., secure banking system]. The core entities are [Insert Entities, e.g., Users, Accounts, Transactions, and Loans]. Should I use a relational database (SQL) or NoSQL for this? Outline the schema with exact field names, data types, and explain the primary/foreign key relationships.",
+    "proTip": "Fixing a bad database schema after users are already using your app is a nightmare. Get this right on day one."
+  },
+  {
+    "id": "arch_3",
+    "title": "The API Endpoint Architect",
+    "category": "Project Architecture",
+    "useCase": "Planning a clean, RESTful backend interface.",
+    "promptText": "I am designing the backend API for a [Insert Project, e.g., superhero movie hub or recipe website]. Map out the exact REST API endpoints I will need for basic CRUD operations. Include the HTTP methods (GET, POST, PUT, DELETE), the required route paths, and a brief JSON example of the expected request/response payloads.",
+    "proTip": "Treat your API documentation like a contract between your frontend and your backend."
+  },
+  {
+    "id": "arch_4",
+    "title": "The ML Pipeline Blueprint",
+    "category": "Project Architecture",
+    "useCase": "Structuring a machine learning project from data collection to deployment.",
+    "promptText": "I am building a [Insert ML Project, e.g., live emotion detection system or medicine prediction app]. Outline the end-to-end architecture pipeline. Detail the steps for data ingestion, preprocessing, model training, and how I should serve the final model via an API for real-time inference.",
+    "proTip": "Machine learning isn't just about training the model; it's about how the model safely consumes data in production."
+  },
+  {
+    "id": "arch_5",
+    "title": "The Folder Structure Generator",
+    "category": "Project Architecture",
+    "useCase": "Organizing your code repository professionally.",
+    "promptText": "I am starting a new full-stack project using [Insert Frontend, e.g., React] and [Insert Backend, e.g., Node.js]. Generate an industry-standard, scalable directory and folder structure. Briefly explain the purpose of directories like 'controllers', 'middlewares', 'services', and 'utils'.",
+    "proTip": "A clean folder structure makes it infinitely easier for open-source contributors or hiring managers to read your code."
+  },
+  {
+    "id": "arch_6",
+    "title": "The 3D Web Integrator",
+    "category": "Project Architecture",
+    "useCase": "Planning how to render heavy 3D assets on the web without lagging.",
+    "promptText": "I want to display complex 3D models (like robots and architecture created in Blender) on a website. Outline the architectural strategy to do this efficiently. Detail how I should export the models (GLTF vs OBJ), how to handle texture compression, and the best JavaScript libraries to use for rendering and camera controls.",
+    "proTip": "Web 3D is all about optimization. Focus heavily on reducing draw calls and compressing textures."
+  },
+  {
+    "id": "arch_7",
+    "title": "The System Scaler",
+    "category": "Project Architecture",
+    "useCase": "Planning for massive traffic spikes.",
+    "promptText": "My app, a [Insert App Type, e.g., live IPL match prediction platform], works fine for 100 users. However, during the finals, it might hit 100,000 concurrent users. Identify the most likely architectural bottlenecks (e.g., database read locks, server memory). Suggest highly specific scaling strategies like read-replicas, load balancing, and edge caching.",
+    "proTip": "Always design your system assuming your database will be the first thing to fail under heavy load."
+  },
+  {
+    "id": "arch_8",
+    "title": "The Authentication Flow Mapper",
+    "category": "Project Architecture",
+    "useCase": "Securing user data and handling logins safely.",
+    "promptText": "I need to implement secure user authentication for my application. Compare the architectural differences between using JSON Web Tokens (JWT) vs Session-based cookies. Which one is better suited for a [Insert Architecture Type, e.g., decoupled React frontend and Python backend]? Outline the exact login flow step-by-step.",
+    "proTip": "Never roll your own cryptography. Always understand the flow before implementing standard security libraries."
+  },
+  {
+    "id": "arch_9",
+    "title": "The Asynchronous Task Manager",
+    "category": "Project Architecture",
+    "useCase": "Handling heavy backend tasks without freezing the user interface.",
+    "promptText": "My web app needs to process heavy tasks, like [Insert Task, e.g., processing a voice-to-text audio file or rendering a video]. I cannot have the user stare at a loading spinner for 5 minutes. Architect a solution using a message broker (like Redis/RabbitMQ) and worker processes. Explain how the frontend will know when the task is complete.",
+    "proTip": "Offloading heavy computation to background workers is the secret to a snappy, responsive user experience."
+  },
+  {
+    "id": "arch_10",
+    "title": "The MVP Scope Reducer",
+    "category": "Project Architecture",
+    "useCase": "Cutting through feature-creep to actually launch your project.",
+    "promptText": "I have a massive idea for a [Insert Idea, e.g., ultimate game hub with multiplayer, leaderboards, chat, and VR support]. Act as a strict Product Manager. Strip this down to the absolute Minimum Viable Product (MVP). What are the top 3 core features I MUST build first to prove the concept, and what should be pushed to Version 2?",
+    "proTip": "Feature creep kills side projects. Ship the simplest version first, then iterate."
+  },
+  {
+    "id": "arch_11",
+    "title": "The Real-Time WebSockets Guide",
+    "category": "Project Architecture",
+    "useCase": "Architecting applications that require instant data updates.",
+    "promptText": "I am building a feature that requires live updates, such as a [Insert Feature, e.g., live chat in a game hub or live stock tickers]. Explain the architectural difference between short-polling, long-polling, Server-Sent Events (SSE), and WebSockets. Which protocol is strictly the best for my specific use case and why?",
+    "proTip": "WebSockets are powerful but resource-intensive. Only keep connections open when absolutely necessary."
+  },
+  {
+    "id": "arch_12",
+    "title": "The State Management Strategist",
+    "category": "Project Architecture",
+    "useCase": "Deciding how data flows through a complex frontend.",
+    "promptText": "I am building a heavy frontend application in [Insert Framework, e.g., React]. The app has complex data like user profiles, dark mode settings, and cart items. Should I use native Context API, or do I need a strict state management library like Redux or Zustand? Map out the global state tree.",
+    "proTip": "Avoid 'prop drilling' early on, but don't overcomplicate with Redux if your app only has a few pages."
+  },
+  {
+    "id": "arch_13",
+    "title": "The CI/CD Pipeline Planner",
+    "category": "Project Architecture",
+    "useCase": "Automating your testing and deployment process.",
+    "promptText": "I want to set up Continuous Integration and Continuous Deployment (CI/CD) for my [Insert Tech Stack] project using GitHub Actions. Outline the steps the pipeline should take every time I push code to the 'main' branch (e.g., linting, running unit tests, building, deploying to production).",
+    "proTip": "Automating deployments removes human error and allows you to ship code faster and more confidently."
+  },
+  {
+    "id": "arch_14",
+    "title": "The Caching Optimizer",
+    "category": "Project Architecture",
+    "useCase": "Drastically improving response times and reducing database costs.",
+    "promptText": "My application makes frequent database queries for data that rarely changes (like [Insert Data, e.g., a list of superhero movies or static recipe categories]). Architect a caching layer using a tool like Redis. Explain cache invalidation—how and when should the cache update if the underlying database changes?",
+    "proTip": "There are only two hard things in Computer Science: cache invalidation and naming things."
+  },
+  {
+    "id": "arch_15",
+    "title": "The Security Threat Modeler",
+    "category": "Project Architecture",
+    "useCase": "Thinking like a hacker to protect your architecture.",
+    "promptText": "Look at my proposed architecture: [Insert Architecture]. Conduct a basic threat modeling exercise. Identify the top 3 biggest security vulnerabilities (e.g., unvalidated inputs, exposed API keys, cross-site scripting) and architect structural defenses to mitigate them before I write the code.",
+    "proTip": "Security is not an add-on you patch in at the end; it must be baked into the architecture from day one."
+  },
+  {
+    "id": "arch_16",
+    "title": "The Third-Party API Integrator",
+    "category": "Project Architecture",
+    "useCase": "Designing resilient systems when relying on external services.",
+    "promptText": "My app relies heavily on a third-party API for [Insert Function, e.g., fetching live cricket scores or processing payments]. How should I architect my backend to handle situations where their API goes down, rate-limits me, or takes 10 seconds to respond? Explain the concept of 'circuit breakers' and fallback data.",
+    "proTip": "Never let an external service's downtime cause your entire application to crash."
+  },
+  {
+    "id": "arch_17",
+    "title": "The Microservices vs. Monolith Debater",
+    "category": "Project Architecture",
+    "useCase": "Making the most debated architectural decision in software.",
+    "promptText": "I am designing a new platform that handles [Insert Core Functions]. Give me a strict, objective comparison of building this as a single Monolith versus breaking it into Microservices. Focus on the trade-offs regarding deployment complexity, debugging, and team scaling. Which one is best for a solo developer vs. a team of 50?",
+    "proTip": "Unless you have a massive team and clear domain boundaries, always start with a well-structured monolith."
+  },
+  {
+    "id": "arch_18",
+    "title": "The Cloud Infrastructure Cost Estimator",
+    "category": "Project Architecture",
+    "useCase": "Preventing surprise $500 AWS bills at the end of the month.",
+    "promptText": "I am planning to deploy my architecture on [Insert Cloud Provider, e.g., AWS / Google Cloud]. It consists of a web server, a managed PostgreSQL database, and cloud storage for user-uploaded files. Assuming roughly 10,000 monthly active users, provide a rough cost estimation breakdown. What hidden data transfer or bandwidth fees should I watch out for?",
+    "proTip": "Cloud providers make their money on the things you forget to turn off or fail to optimize."
+  },
+  {
+    "id": "arch_19",
+    "title": "The Disaster Recovery Planner",
+    "category": "Project Architecture",
+    "useCase": "Preparing for the absolute worst-case scenario.",
+    "promptText": "Imagine my primary database server for [Insert Project] just permanently crashed and the data was wiped. Architect a disaster recovery plan. How frequently should I be running automated backups? Where should they be stored? How long should it take to restore the system to full operational status (RTO/RPO)?",
+    "proTip": "A backup isn't a backup until you have successfully tested restoring from it."
+  },
+  {
+    "id": "arch_20",
+    "title": "The Edge Case Architecture Review",
+    "category": "Project Architecture",
+    "useCase": "Finding the structural flaws in your logic.",
+    "promptText": "Here is the flow of my application: [Describe the user flow and backend logic]. Challenge my architecture. What happens if a user double-clicks the 'Submit Payment' button? What happens if the internet drops halfway through an image upload? Help me design idempotent endpoints to handle these edge cases safely.",
+    "proTip": "Designing idempotent APIs ensures that if a request is accidentally duplicated, the system state remains consistent and safe."
+  },
+  {
+    "id": "creative_1",
+    "title": "The Blank Canvas Constrainer",
+    "category": "Creative Workflows",
+    "useCase": "Breaking through creative block by forcing artificial limitations.",
+    "promptText": "I need to design a [Insert Project Type, e.g., concert poster / 3D character] but I have severe creative block. Give me 3 highly specific, unconventional constraints. For example, dictate a bizarre color palette, a specific shape language I must use exclusively, or a weird theme I have to incorporate.",
+    "proTip": "Creativity thrives on constraints. Having infinite options is what causes blank-page paralysis."
+  },
+  {
+    "id": "creative_2",
+    "title": "The UX Wireframe Architect",
+    "category": "Creative Workflows",
+    "useCase": "Planning the layout and user flow of a new app screen.",
+    "promptText": "I am designing the [Insert Screen Name, e.g., checkout page or user dashboard] for a [Insert App Type, e.g., fitness tracking app]. List out the exact UI components I need on this screen from top to bottom. Prioritize them based on visual hierarchy and user goals. What is the primary Call to Action (CTA)?",
+    "proTip": "Never start pushing pixels in Figma until you know exactly what information needs to be on the screen."
+  },
+  {
+    "id": "creative_3",
+    "title": "The 3D Topology Checker",
+    "category": "Creative Workflows",
+    "useCase": "Ensuring a 3D model deforms properly during animation.",
+    "promptText": "I am modeling a [Insert Object/Character Part, e.g., human hand or car fender] in [Insert Software, e.g., Blender/Maya]. Outline the best practices for edge flow and topology for this specific object. Where should I place edge loops to ensure it deforms cleanly without pinching when rigged and animated?",
+    "proTip": "Bad topology will ruin a great sculpt the second you try to move it. Plan your edge loops early."
+  },
+  {
+    "id": "creative_4",
+    "title": "The Render Time Reducer",
+    "category": "Creative Workflows",
+    "useCase": "Optimizing 3D scenes so they don't take 40 hours to render.",
+    "promptText": "My scene in [Insert Render Engine, e.g., Cycles / Arnold] is taking way too long to render. It features [Describe Scene, e.g., a dark room with volumetric fog and glass materials]. Give me a checklist of 5 specific render settings or material hacks I can tweak to drastically reduce render times without losing noticeable visual quality.",
+    "proTip": "In production, rendering is about cheating reality, not simulating it perfectly. Use optimization tricks."
+  },
+  {
+    "id": "creative_5",
+    "title": "The Color Theory Consultant",
+    "category": "Creative Workflows",
+    "useCase": "Generating meaningful, accessible color palettes.",
+    "promptText": "I am designing a brand identity for a [Insert Industry/Vibe, e.g., high-end organic coffee shop]. I want the mood to feel [Insert Adjectives, e.g., warm, sophisticated, and earthy]. Generate a 5-color palette (with HEX codes). Explain exactly why these colors work together psychologically and ensure the primary text/background colors pass WCAG accessibility standards.",
+    "proTip": "Accessible design is good design. Never use low-contrast colors for essential text."
+  },
+  {
+    "id": "creative_6",
+    "title": "The Typography Matchmaker",
+    "category": "Creative Workflows",
+    "useCase": "Pairing fonts that actually look good together.",
+    "promptText": "I am working on a [Insert Project, e.g., modern tech blog or wedding invitation]. Suggest 3 different font pairings (Heading font + Body font). For each pair, explain the typographic contrast (e.g., serif vs sans-serif, varying weights) and why it fits the mood of my project. Only suggest free fonts from Google Fonts.",
+    "proTip": "Limit yourself to two fonts maximum per project. Let weight and scale create the hierarchy."
+  },
+  {
+    "id": "creative_7",
+    "title": "The Figma Auto-Layout Strategist",
+    "category": "Creative Workflows",
+    "useCase": "Building scalable, responsive UI components.",
+    "promptText": "I need to build a complex UI component in Figma: a [Insert Component, e.g., responsive pricing card with a bulleted list and a button]. Explain exactly how I should structure the Auto-Layout frames (rows, columns, fill container vs hug contents) so that the card scales perfectly whether viewed on mobile or desktop.",
+    "proTip": "Mastering Auto-Layout separates junior designers from senior designers."
+  },
+  {
+    "id": "creative_8",
+    "title": "The UX Empathy Writer",
+    "category": "Creative Workflows",
+    "useCase": "Fixing robotic or frustrating error messages.",
+    "promptText": "My app currently displays this error message: [Insert Current Message, e.g., 'Error 404: Database Connection Failed']. Rewrite this microcopy to be empathetic, helpful, and human. The tone of my brand is [Insert Tone, e.g., playful / highly professional]. Give me 3 variations.",
+    "proTip": "Good UX writing guides the user out of a problem instead of just blaming them for it."
+  },
+  {
+    "id": "creative_9",
+    "title": "The UV Mapping Guide",
+    "category": "Creative Workflows",
+    "useCase": "Making the most tedious part of 3D modeling painless.",
+    "promptText": "I have finished modeling a [Insert Complex Object, e.g., detailed sci-fi rifle] and I need to UV unwrap it. Walk me through the logical strategy for placing seams. Where should I hide the seams, and how should I pack the UV islands to maximize texel density for the most visible parts of the model?",
+    "proTip": "Always hide your seams where the camera (or the player) will never look."
+  },
+  {
+    "id": "creative_10",
+    "title": "The Lighting Studio Architect",
+    "category": "Creative Workflows",
+    "useCase": "Creating cinematic lighting setups for 3D or photography.",
+    "promptText": "I need to light a [Insert Subject, e.g., realistic portrait / product render of a glass bottle] in a 3D environment to make it look cinematic. Give me a detailed lighting setup. Where should I place the key light, fill light, and rim light? What color temperatures and intensities should I use to create a [Insert Mood, e.g., moody and dramatic] vibe?",
+    "proTip": "Lighting is 80% of what makes a 3D render look realistic. Flat lighting makes great models look terrible."
+  },
+  {
+    "id": "creative_11",
+    "title": "The Motion Graphics Expression Generator",
+    "category": "Creative Workflows",
+    "useCase": "Automating animations in After Effects using math instead of keyframes.",
+    "promptText": "I am working in After Effects and I want to animate a [Insert Object/Property, e.g., a shape layer's scale]. I want it to [Describe Motion, e.g., bounce dynamically and settle like a spring when it scales up]. Write the exact JavaScript expression I need to paste into the property to achieve this without manual keyframing.",
+    "proTip": "Using expressions saves hours of tweaking keyframes and graph editors."
+  },
+  {
+    "id": "creative_12",
+    "title": "The Portfolio Case Study Structurer",
+    "category": "Creative Workflows",
+    "useCase": "Turning a simple visual project into an impressive Behance/Portfolio study.",
+    "promptText": "I just finished a [Insert Project Type, e.g., UI redesign of Spotify]. I want to turn this into a comprehensive case study for my portfolio. Outline the sections I need to include (e.g., Problem Statement, User Research, Iteration). What specific deliverables should I show in each section to prove my thought process to recruiters?",
+    "proTip": "Recruiters hire you for your problem-solving process, not just the final pretty picture."
+  },
+  {
+    "id": "creative_13",
+    "title": "The Video Pacing Consultant",
+    "category": "Creative Workflows",
+    "useCase": "Fixing a video edit that feels boring or slow.",
+    "promptText": "I am editing a [Insert Video Type, e.g., 10-minute YouTube documentary or 30-second promo]. The rough cut is done, but the pacing feels dragging and I am losing the viewer's attention. Give me 5 advanced video editing techniques (like J/L cuts, b-roll timing, or sound design cues) to increase the perceived momentum and retention.",
+    "proTip": "Pacing isn't just about cutting faster; it's about rhythm. Use audio to drive the visual cuts."
+  },
+  {
+    "id": "creative_14",
+    "title": "The Color Grading Strategist",
+    "category": "Creative Workflows",
+    "useCase": "Achieving a specific cinematic look in video post-production.",
+    "promptText": "I am color grading footage shot on [Insert Camera/Profile, e.g., Sony S-Log3]. I want to achieve a [Insert Look, e.g., Cyberpunk neon / vintage 90s film] look. Walk me through the order of operations in [Insert Software, e.g., DaVinci Resolve]. How should I handle the color space transform, contrast curve, and HSL adjustments?",
+    "proTip": "Always color correct (balance exposure and white balance) before you color grade (apply a creative look)."
+  },
+  {
+    "id": "creative_15",
+    "title": "The UI Animation Easing Coach",
+    "category": "Creative Workflows",
+    "useCase": "Making UI interactions feel snappy and satisfying.",
+    "promptText": "I am designing a UI animation for when a user [Insert Action, e.g., clicks a 'Submit' button and a modal pops up]. Linear animation feels robotic. Recommend the exact CSS cubic-bezier curves (e.g., ease-in-out, spring, bounce) I should use for the entrance and exit animations to make it feel [Insert Vibe, e.g., playful and tactile].",
+    "proTip": "Entrance animations should generally be slightly slower and use 'ease-out', while exit animations should be faster and use 'ease-in'."
+  },
+  {
+    "id": "creative_16",
+    "title": "The UX Research Question Crafter",
+    "category": "Creative Workflows",
+    "useCase": "Asking users the right questions without biasing their answers.",
+    "promptText": "I am conducting user interviews for a new [Insert App Concept, e.g., student budgeting app]. I want to know if they would actually use it. Generate 5 open-ended, non-leading questions that will reveal their actual habits and pain points, rather than just asking them 'Do you like this idea?'",
+    "proTip": "Users will always lie and say your idea is good to be polite. Ask about their past behavior, not their future intent."
+  },
+  {
+    "id": "creative_17",
+    "title": "The Asset Naming Convention Enforcer",
+    "category": "Creative Workflows",
+    "useCase": "Organizing massive creative projects so teammates don't hate you.",
+    "promptText": "I am working on a massive [Insert Software, e.g., Photoshop / Unity] project with hundreds of layers/assets. Propose a strict, professional naming convention for my files and layers. How should I denote versions, asset types, and states (like hover vs active)? Give me 5 examples.",
+    "proTip": "Never name a file 'Final_v2_ActuallyFinal.psd'. Establish a version control naming rule on day one."
+  },
+  {
+    "id": "creative_18",
+    "title": "The Creative Brief Simulator",
+    "category": "Creative Workflows",
+    "useCase": "Generating realistic projects to build your portfolio.",
+    "promptText": "I want to build my portfolio. Act as a demanding client. Generate a realistic, comprehensive creative brief for a [Insert Project Type, e.g., mobile app design for a local plant nursery]. Include the target audience, business goals, mandatory features, technical constraints, and a specific stylistic requirement.",
+    "proTip": "Treat this simulated brief as seriously as a real paying client to make your portfolio look highly professional."
+  },
+  {
+    "id": "creative_19",
+    "title": "The Logo Scalability Auditor",
+    "category": "Creative Workflows",
+    "useCase": "Ensuring brand designs work in the real world.",
+    "promptText": "I have designed a logo that features [Describe Logo, e.g., a detailed illustration of a tree with thin typography]. Critique this design strictly on scalability and versatility. What will happen to these details when the logo is shrunk down to a 16x16 pixel website favicon or embroidered on a shirt? How should I adapt it?",
+    "proTip": "A great logo works just as well stamped in black and white as it does in full color on a billboard."
+  },
+  {
+    "id": "creative_20",
+    "title": "The Compositing Logic Checker",
+    "category": "Creative Workflows",
+    "useCase": "Making photoshopped images or VFX shots look seamlessly real.",
+    "promptText": "I am compositing a [Insert Element, e.g., a 3D spaceship] into a live-action background plate of a [Insert Background, e.g., sunny city street]. List the 5 critical visual elements I need to match exactly (like black levels, grain, light direction, focal blur) so the fake element doesn't look pasted on.",
+    "proTip": "Always match the black levels of your CGI to the darkest shadow in the real-world plate."
+  },
+{
+    "id": "data_1",
+    "title": "The Formula Architect",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Translating plain English into complex Excel or Google Sheets formulas.",
+    "promptText": "Act as an expert data analyst. I am using [Spreadsheet Software, e.g., Excel, Google Sheets]. I have a dataset where Column A is [Column A Data] and Column B is [Column B Data]. Write a formula to [Describe the desired calculation or output]. Explain how the formula works step-by-step.",
+    "proTip": "Specify your software because Excel and Google Sheets have slightly different function libraries (like FILTER or XLOOKUP)."
+},
+{
+    "id": "data_2",
+    "title": "The VLOOKUP / XLOOKUP Fixer",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Debugging broken lookup formulas.",
+    "promptText": "My [Formula Type, e.g., VLOOKUP, INDEX/MATCH] is returning an error. My current formula is [Insert Formula]. I am trying to search for [Search Value] inside [Target Range] to return the value in [Return Column]. Tell me exactly why it is breaking and give me the corrected formula.",
+    "proTip": "Often, errors are caused by mismatched data types (text vs. numbers). Ask the AI to include a TRIM or VALUE wrap if needed."
+},
+{
+    "id": "data_3",
+    "title": "The Data Cleaner",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Formatting messy, raw data exports.",
+    "promptText": "I have a messy column of data that looks like this: [Paste a few rows of messy data]. I need to extract just the [Specific Data to Extract, e.g., email domains, zip codes]. Write an Excel/Google Sheets formula to extract this cleanly, and account for blank cells.",
+    "proTip": "If formulas are too complex, ask the AI to generate a quick Regex pattern or VBA/App Script instead."
+},
+{
+    "id": "data_4",
+    "title": "The Pivot Table Planner",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Structuring raw data for executive summaries.",
+    "promptText": "I have a dataset with the following headers: [Paste Headers]. I need to answer this business question: [Insert Business Question]. Tell me exactly how to set up my Pivot Table. What should go into the Rows, Columns, Values, and Filters boxes?",
+    "proTip": "Ask the AI to recommend the best chart type (e.g., bar chart, line graph) to accompany this specific Pivot Table."
+},
+{
+    "id": "data_5",
+    "title": "The SQL Query Generator",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Writing accurate SQL queries from plain English requirements.",
+    "promptText": "Act as a Senior Data Engineer. I am using [SQL Dialect, e.g., PostgreSQL, MySQL]. I have a table named [Table Name] with these columns: [List Columns]. Write a query to find the [Desired Output, e.g., top 5 customers by revenue this month]. Include comments explaining the logic.",
+    "proTip": "Always provide the exact table and column names so you can copy-paste the result without editing."
+},
+{
+    "id": "data_6",
+    "title": "The SQL Query Optimizer",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Speeding up slow-running database queries.",
+    "promptText": "Review this SQL query: [Paste SQL Query]. It is running too slowly on my [SQL Dialect] database. Identify any performance bottlenecks (like N+1 queries or missing indexes) and rewrite it to be highly optimized.",
+    "proTip": "If using EXPLAIN ANALYZE, paste the output plan into the prompt for hyper-specific tuning advice."
+},
+{
+    "id": "data_7",
+    "title": "The Python Pandas Translator",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Converting spreadsheet logic into Python code.",
+    "promptText": "I normally use Excel to [Describe Excel Workflow, e.g., filter rows where sales > 100 and group by region]. How do I do this exact same thing in Python using the pandas library? My dataframe is called [Dataframe Name].",
+    "proTip": "Pandas can be tricky with chained indexing. Ask the AI to provide the most 'Pythonic' and efficient method."
+},
+{
+    "id": "data_8",
+    "title": "The Regex Pattern Builder",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Creating regular expressions for data extraction.",
+    "promptText": "I need a Regular Expression (Regex) pattern to extract [What you want to extract, e.g., US phone numbers] from a messy string. The flavor of Regex I am using is [Language/Tool, e.g., Python, Google Sheets]. Provide the pattern and explain what each symbol does.",
+    "proTip": "Always provide 3 examples of what the text looks like so the AI can test its own pattern before giving it to you."
+},
+{
+    "id": "data_9",
+    "title": "The Storytelling Analyst",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Extracting the 'So What?' from a block of numbers.",
+    "promptText": "Here are the key metrics from our recent [Project/Campaign Name]: [Paste Data Summary]. Act as a Data Storyteller. Summarize this data in 3 bullet points for a non-technical executive. Focus on the business impact and what action we should take next.",
+    "proTip": "Executives don't care about the math; they care about the money. Ask the AI to focus heavily on ROI."
+},
+{
+    "id": "data_10",
+    "title": "The Conditional Formatting Coder",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Writing custom formulas for cell highlighting.",
+    "promptText": "I am in [Software]. I want to use Conditional Formatting on Column [Target Column]. Write the custom formula rule that will highlight the cell ONLY IF [Describe Condition, e.g., the date is past due AND the status is not 'Complete'].",
+    "proTip": "Make sure to tell the AI if you want the whole row highlighted or just the single cell."
+},
+{
+    "id": "data_11",
+    "title": "The VBA / Macro Scripter",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Automating repetitive Excel tasks without knowing how to code.",
+    "promptText": "Write an Excel VBA script that will [Describe the repetitive task, e.g., loop through all sheets, copy data from A1:D10, and paste it into a master sheet]. Add comments to every line so I know what it does.",
+    "proTip": "Always save a backup of your workbook before running AI-generated VBA scripts!"
+},
+{
+    "id": "data_12",
+    "title": "The Google Apps Script Generator",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Automating Google Workspace.",
+    "promptText": "Write a Google Apps Script that triggers when [Trigger Event, e.g., a new row is added]. The script should [Describe Action, e.g., send an email to the address in Column C with the subject 'Welcome'].",
+    "proTip": "You can ask the AI to generate HTML templates to make the automated emails look professional."
+},
+{
+    "id": "data_13",
+    "title": "The DAX Measure Creator",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Building Power BI calculations.",
+    "promptText": "I am working in Power BI. I need a DAX measure to calculate [Calculation Goal, e.g., Year-over-Year Sales Growth]. My fact table is called [Fact Table] and my date table is called [Date Table].",
+    "proTip": "DAX relies heavily on context. Make sure to mention if you need this calculated at a row level or aggregate level."
+},
+{
+    "id": "data_14",
+    "title": "The A/B Test Evaluator",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Determining if data results are statistically significant.",
+    "promptText": "I ran an A/B test. Variant A had [Number] visitors and [Number] conversions. Variant B had [Number] visitors and [Number] conversions. Calculate the conversion rates, tell me if the result is statistically significant at a 95% confidence level, and explain what that means.",
+    "proTip": "You can ask the AI to format the output as a formal report to copy-paste directly to your marketing team."
+},
+{
+    "id": "data_15",
+    "title": "The Dashboard Wireframer",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Planning a BI dashboard layout before building it.",
+    "promptText": "I need to build a dashboard in [Tool, e.g., Tableau, Looker] for [Target Audience, e.g., the VP of Sales]. The goal of the dashboard is [Goal]. Suggest 4 high-level KPI scorecards for the top, and 3 specific charts/graphs for the main body. Explain why each chart is necessary.",
+    "proTip": "Visual hierarchy is key. Ask the AI what colors should be used to draw attention to critical metrics."
+},
+{
+    "id": "data_16",
+    "title": "The Dataset Joiner",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Figuring out the logic for merging two messy data sources.",
+    "promptText": "I have Dataset 1 with columns [List Columns 1]. I have Dataset 2 with columns [List Columns 2]. I need to merge them to analyze [Analysis Goal]. What is the best 'key' to join these on? Should I use a Left Join, Inner Join, or Outer Join? Explain why.",
+    "proTip": "If the keys don't match perfectly (e.g., 'Apple Inc.' vs 'Apple'), ask the AI for fuzzy matching strategies."
+},
+{
+    "id": "data_17",
+    "title": "The Anomaly Detective",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Finding outliers in a dataset.",
+    "promptText": "I am analyzing [Type of Data, e.g., daily website traffic] and need to find outliers. What are 3 statistical methods or formulas I can use in [Software, e.g., Excel, Python] to automatically flag anomalies?",
+    "proTip": "Standard deviation and Interquartile Range (IQR) are usually the best places to start."
+},
+{
+    "id": "data_18",
+    "title": "The KPI Brainstormer",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Figuring out what metrics actually matter.",
+    "promptText": "I manage a [Type of Business/Department, e.g., SaaS Customer Success team]. Give me a list of 5 actionable lagging indicators and 5 actionable leading indicators I should be tracking in my spreadsheets. Define the formula for each.",
+    "proTip": "Leading indicators predict the future; lagging indicators report the past. Both are necessary."
+},
+{
+    "id": "data_19",
+    "title": "The Synthetic Data Generator",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Creating dummy data to test formulas or database schemas.",
+    "promptText": "Generate a CSV format table with [Number] rows of realistic dummy data for a [Industry/Niche] company. Include the following columns: [List Desired Columns]. Make sure the data follows logical constraints (e.g., end dates are after start dates).",
+    "proTip": "Paste this directly into a plain text file, save it as a .csv, and open it in Excel to start testing immediately."
+},
+{
+    "id": "data_20",
+    "title": "The Code to Plain English Translator",
+    "category": "Data Analysis & Spreadsheets",
+    "useCase": "Understanding a massive script left behind by a former employee.",
+    "promptText": "I inherited this [Language, e.g., SQL, Python, R] script from a former coworker. I don't know this language well. Explain exactly what this script is doing in plain English, step-by-step: [Paste Code].",
+    "proTip": "Ask the AI to rewrite the script adding inline comments so you never forget what it does."
+},
+{
+    "id": "write_1",
+    "title": "The Writer's Block Breaker",
+    "category": "Writing & Copywriting",
+    "useCase": "Getting past the blank page syndrome with strong opening hooks.",
+    "promptText": "Act as an expert copywriter. I need to write a [Format, e.g., blog post, email, landing page] about [Topic]. I am stuck and don't know how to start. Give me 3 highly engaging, completely different opening hooks to get the reader's attention immediately. The tone should be [Tone].",
+    "proTip": "If you don't like the hooks, ask the AI to make them 'more punchy', 'more academic', or 'more controversial'."
+},
+{
+    "id": "write_2",
+    "title": "The Tone Mimic",
+    "category": "Writing & Copywriting",
+    "useCase": "Making AI sound like a specific brand, author, or persona.",
+    "promptText": "Analyze the writing style, tone, and sentence structure of this text: [Insert Reference Text]. Then, write a [Format, e.g., Twitter thread, product description] about [New Topic] using that exact same style and voice.",
+    "proTip": "The longer the reference text you provide, the better the AI will adapt to the specific cadence and vocabulary."
+},
+{
+    "id": "write_3",
+    "title": "The Cold Email Converter",
+    "category": "Writing & Copywriting",
+    "useCase": "Writing B2B outreach emails that actually get replies.",
+    "promptText": "Write a short, punchy cold email to [Target Audience/Job Title]. The goal is to get them to [Desired Action, e.g., book a 10-minute demo, reply to a question]. Use the 'Problem-Agitate-Solve' (PAS) framework. Mention our core value proposition: [Insert Value Prop]. Keep it under 150 words.",
+    "proTip": "Always ask the AI to provide 3 different subject line options for A/B testing."
+},
+{
+    "id": "write_4",
+    "title": "The SEO Blog Outliner",
+    "category": "Writing & Copywriting",
+    "useCase": "Structuring an article to rank on Google before writing it.",
+    "promptText": "I am writing an SEO blog post targeting the primary keyword '[Primary Keyword]'. The target audience is [Target Audience]. Generate a comprehensive outline including an H1, multiple H2s, and H3s. Include a list of LSI (Latent Semantic Indexing) keywords I should sprinkle throughout the text.",
+    "proTip": "Use the outline as a skeleton, then ask the AI to write the post one H2 section at a time for better quality."
+},
+{
+    "id": "write_5",
+    "title": "The Headline Hook Generator",
+    "category": "Writing & Copywriting",
+    "useCase": "Brainstorming clickable, high-converting titles.",
+    "promptText": "I have written a [Content Type, e.g., YouTube video, Article, Ad] about [Topic]. Generate 10 highly clickable, curiosity-inducing headlines. Do not use clickbait, but make them impossible to ignore. Use formats like 'How to...', 'The Secret to...', and numbered lists.",
+    "proTip": "Numbers in headlines (especially odd numbers) statistically increase click-through rates."
+},
+{
+    "id": "write_6",
+    "title": "The Landing Page Transformer",
+    "category": "Writing & Copywriting",
+    "useCase": "Structuring high-converting website copy.",
+    "promptText": "I am building a landing page for [Product/Service Name], which helps [Target Audience] achieve [Main Benefit]. Write the copy for the page using the AIDA (Attention, Interest, Desire, Action) framework. Include a Hero Headline, a Sub-headline, 3 key feature/benefit bullets, and a Call to Action.",
+    "proTip": "Features tell, benefits sell. Ask the AI to ensure every feature is tied directly to an emotional benefit."
+},
+{
+    "id": "write_7",
+    "title": "The Grammar & Flow Polisher",
+    "category": "Writing & Copywriting",
+    "useCase": "Editing rough drafts for clarity, punchiness, and rhythm.",
+    "promptText": "Review the following text: [Insert Rough Draft]. Fix any grammatical errors, but more importantly, improve the flow and readability. Make the sentences punchier, remove passive voice, and eliminate filler words. Show me the revised version and briefly explain what you changed.",
+    "proTip": "Ask the AI to format the output at a '7th-grade reading level' to ensure maximum readability for a general audience."
+},
+{
+    "id": "write_8",
+    "title": "The Metaphor Maker",
+    "category": "Writing & Copywriting",
+    "useCase": "Explaining complex or boring concepts using relatable analogies.",
+    "promptText": "I need to explain the concept of [Complex Concept, e.g., blockchain, APIs, compound interest] to [Target Audience, e.g., a 5-year-old, a non-technical CEO]. Generate 3 creative metaphors or analogies that make this concept instantly understandable.",
+    "proTip": "Metaphors are the ultimate cheat code for persuasive writing. Use them in your hero sections and pitch decks."
+},
+{
+    "id": "write_9",
+    "title": "The Twitter/X Thread Weaver",
+    "category": "Writing & Copywriting",
+    "useCase": "Turning long-form ideas into viral social media threads.",
+    "promptText": "Turn this core idea into a compelling, 7-part Twitter/X thread: [Insert Core Idea/Text]. The first tweet must be a strong hook that creates a knowledge gap. The final tweet must have a clear call-to-action (CTA). Keep the tone [Tone, e.g., authoritative, conversational].",
+    "proTip": "Format matters on X. Ask the AI to include line breaks and avoid using excessive emojis or hashtags."
+},
+{
+    "id": "write_10",
+    "title": "The Product Description Seller",
+    "category": "Writing & Copywriting",
+    "useCase": "Writing e-commerce copy that drives add-to-carts.",
+    "promptText": "Write a compelling product description for a [Product Name/Type]. The key features are [List Features]. The target buyer struggles with [Customer Pain Point]. Focus heavily on sensory words and the emotional transformation the product provides.",
+    "proTip": "Include a section for 'Who this is NOT for' to build trust and increase conversion rates among your true target audience."
+},
+{
+    "id": "write_11",
+    "title": "The Newsletter Nurturer",
+    "category": "Writing & Copywriting",
+    "useCase": "Drafting engaging weekly emails to your subscribers.",
+    "promptText": "Write a weekly newsletter for an audience interested in [Niche/Topic]. The main story/lesson this week is [Main Lesson]. Include a brief intro, the main value-add section, and a 'Resource of the week' shoutout. Make it feel personal, like a letter from a friend.",
+    "proTip": "Use the 'P.S.' section at the bottom—it's statistically the most read part of any marketing email."
+},
+{
+    "id": "write_12",
+    "title": "The LinkedIn Thought Leader",
+    "category": "Writing & Copywriting",
+    "useCase": "Creating professional, story-driven networking posts.",
+    "promptText": "Write a LinkedIn post about a time I learned a hard lesson regarding [Topic, e.g., leadership, failure, coding]. Use short, one-sentence paragraphs for readability. Start with a contrarian statement or a vulnerable admission. End with a question to drive comments.",
+    "proTip": "LinkedIn algorithms love dwell time. Start with a hook that forces people to click 'See more...'."
+},
+{
+    "id": "write_13",
+    "title": "The Objection Overcomer",
+    "category": "Writing & Copywriting",
+    "useCase": "Pre-emptively answering customer doubts in your copy.",
+    "promptText": "I am selling a [Product/Service] for [Price]. The biggest objections my customers have are [List Objections, e.g., it's too expensive, it takes too much time]. Write a FAQ section or a 'Guarantee' section for my sales page that completely dismantles these objections.",
+    "proTip": "Reframe price objections into an 'investment' or compare the cost to a relatable daily expense (like a cup of coffee)."
+},
+{
+    "id": "write_14",
+    "title": "The Press Release Pro",
+    "category": "Writing & Copywriting",
+    "useCase": "Drafting official company announcements for journalists.",
+    "promptText": "Write a formal press release announcing [Company Name]'s new [Product/Milestone/Partnership]. Include a strong headline, a dateline, an opening summary paragraph, a quote from our CEO [CEO Name], and a boilerplate 'About the Company' section at the end.",
+    "proTip": "Journalists are busy. Keep the 'inverted pyramid' structure—put the most crucial information in the very first paragraph."
+},
+{
+    "id": "write_15",
+    "title": "The Video Script Hook",
+    "category": "Writing & Copywriting",
+    "useCase": "Scripting the first 15 seconds of a YouTube/TikTok video.",
+    "promptText": "I am making a short-form video about [Video Topic]. Write a 15-second script for the intro. Do not say 'Hi guys' or introduce yourself. Start immediately with a shocking fact, a visual pattern interrupt, or a bold promise that forces them to keep watching.",
+    "proTip": "Include visual cues in brackets (e.g., [Zoom in fast], [Show graphic]) so the AI helps you direct the video too."
+},
+{
+    "id": "write_16",
+    "title": "The Jargon Translator",
+    "category": "Writing & Copywriting",
+    "useCase": "Turning dense, technical jargon into human language.",
+    "promptText": "Translate this highly technical paragraph into plain English that a high schooler could understand, without losing the core meaning: [Insert Technical Text].",
+    "proTip": "Great for rewriting terms of service, developer documentation, or medical/legal texts for a consumer audience."
+},
+{
+    "id": "write_17",
+    "title": "The Call-To-Action (CTA) Optimizer",
+    "category": "Writing & Copywriting",
+    "useCase": "Generating button copy that begs to be clicked.",
+    "promptText": "My current button copy says 'Submit' (or 'Click Here'). The user is clicking it to get [Describe What They Get, e.g., a free PDF, a consultation]. Generate 10 highly specific, action-oriented CTA button texts that focus on the value they are about to receive.",
+    "proTip": "Best practice: The button text should complete the sentence 'I want to...' (e.g., 'I want to [Get My Free Guide]')."
+},
+{
+    "id": "write_18",
+    "title": "The Case Study Storyteller",
+    "category": "Writing & Copywriting",
+    "useCase": "Formatting client success stories for B2B sales.",
+    "promptText": "Turn these raw notes into a compelling B2B case study. Client: [Client Name]. Problem: [Problem]. Solution: [Our Solution]. Results: [Metrics/Results]. Format it with clear headings: The Challenge, The Solution, and The Impact. Include a placeholder for a pull-quote.",
+    "proTip": "Numbers speak louder than words. Ensure the AI highlights specific percentages, time saved, or revenue generated."
+},
+{
+    "id": "write_19",
+    "title": "The Ad Copy A/B Tester",
+    "category": "Writing & Copywriting",
+    "useCase": "Generating distinct variations for Facebook or Google Ads.",
+    "promptText": "I am running Facebook Ads for [Product/Service]. Write 3 completely different ad variations. Variation 1 should focus on logical benefits (saving time/money). Variation 2 should focus on emotional pain points (fear of missing out/stress). Variation 3 should be a short, punchy testimonial style.",
+    "proTip": "Ensure the AI keeps the primary text under 125 characters so it doesn't get truncated on mobile screens."
+},
+{
+    "id": "write_20",
+    "title": "The Crisis Communicator",
+    "category": "Writing & Copywriting",
+    "useCase": "Drafting an apology or damage-control email to customers.",
+    "promptText": "We experienced a major issue: [Describe Issue, e.g., site went down for 12 hours, orders were delayed]. Write a sincere, transparent apology email to our customers. Take extreme ownership, explain what happened without making excuses, and detail the exact steps we are taking to ensure it never happens again.",
+    "proTip": "Sincerity is everything. Instruct the AI to avoid corporate-speak like 'We apologize for any inconvenience'."
+},
+
+{
+    "id": "prod_1",
+    "title": "The Task Triage (Eisenhower Matrix)",
+    "category": "Productivity & Planning",
+    "useCase": "Instantly prioritizing a chaotic and overwhelming to-do list.",
+    "promptText": "Act as an executive productivity coach. Here is my completely unorganized list of tasks for the week: [Insert Task List]. Organize these into an Eisenhower Matrix (1. Do First, 2. Schedule, 3. Delegate, 4. Delete). Tell me exactly what I should do in the next 60 minutes to gain momentum.",
+    "proTip": "Don't filter yourself when pasting the list. Include personal chores alongside work tasks so the AI sees your full mental load."
+},
+{
+    "id": "prod_2",
+    "title": "The Micro-Step Breakdown",
+    "category": "Productivity & Planning",
+    "useCase": "Defeating procrastination by breaking massive projects into tiny steps.",
+    "promptText": "I have a massive project to complete: [Project Goal]. It feels overwhelming and I am avoiding it. Break this down into 10 incredibly small, actionable 'micro-steps' that take less than [Number of Minutes] minutes each. Make the very first step ridiculously easy.",
+    "proTip": "A good first micro-step should take less than 2 minutes, like 'Create a new folder on the desktop' or 'Open a blank document'."
+},
+{
+    "id": "prod_3",
+    "title": "The Time-Block Scheduler",
+    "category": "Productivity & Planning",
+    "useCase": "Converting a raw to-do list into a realistic daily calendar.",
+    "promptText": "I need to plan my day using time-blocking. I have [Number of Hours] hours available starting at [Start Time]. Here are my tasks and estimated durations: [List Tasks and Times]. I also need a [Lunch/Break Length] minute break. Generate a chronological schedule for my day, grouping similar tasks together.",
+    "proTip": "Always over-estimate how long tasks take by 20% to give yourself a buffer for interruptions."
+},
+{
+    "id": "prod_4",
+    "title": "The 80/20 Analyzer (Pareto Principle)",
+    "category": "Productivity & Planning",
+    "useCase": "Identifying the few tasks that will drive the most results.",
+    "promptText": "Here is a list of everything I am currently working on or planning to do: [Insert Project/Task List]. Based on the 80/20 rule (Pareto Principle), identify the 20% of these tasks that are likely to yield 80% of the positive results for my main goal of [Main Goal]. Tell me what I should ruthlessly cut.",
+    "proTip": "This is highly effective for freelancers and founders who are wearing too many hats."
+},
+{
+    "id": "prod_5",
+    "title": "The SMART Goal Sculptor",
+    "category": "Productivity & Planning",
+    "useCase": "Turning a vague ambition into a concrete, measurable plan.",
+    "promptText": "I have a vague goal: [Vague Goal, e.g., 'Get better at coding' or 'Grow my business']. Turn this into a strict SMART goal (Specific, Measurable, Achievable, Relevant, Time-bound). Then, give me 3 milestones to track my progress over the next [Timeframe, e.g., 90 days].",
+    "proTip": "If the goal feels too easy after it's made SMART, ask the AI to '10X the ambition' of the goal."
+},
+{
+    "id": "prod_6",
+    "title": "The Energy-Based Workflow",
+    "category": "Productivity & Planning",
+    "useCase": "Matching your tasks to your natural daily energy levels.",
+    "promptText": "I want to organize my tasks based on my energy levels. My high-energy peak is during the [Time of Day, e.g., Morning], and I crash during the [Crash Time, e.g., Mid-afternoon]. Sort this list of tasks into 'Deep Work' (high energy), 'Shallow Work' (medium energy), and 'Brain-Dead Work' (low energy): [Insert Tasks].",
+    "proTip": "Save email replies, data entry, and organizing files for your 'Brain-Dead' low-energy windows."
+},
+{
+    "id": "prod_7",
+    "title": "The Habit Loop Architect",
+    "category": "Productivity & Planning",
+    "useCase": "Designing a new, sticky habit using psychology.",
+    "promptText": "I want to build a new daily habit of [Desired Habit]. Using Charles Duhigg's Habit Loop framework, help me design an obvious 'Cue', an easy 'Routine', and a satisfying 'Reward' to make this stick. Also, suggest an existing habit I can 'stack' this onto.",
+    "proTip": "Habit stacking (e.g., 'After I pour my morning coffee, I will do X') is statistically the best way to build a new routine."
+},
+{
+    "id": "prod_8",
+    "title": "The Distraction Shield (If-Then Plan)",
+    "category": "Productivity & Planning",
+    "useCase": "Pre-planning your response to inevitable interruptions.",
+    "promptText": "I am trying to focus on [Deep Work Task]. However, I constantly get distracted by [List Distractions, e.g., phone notifications, coworkers, wandering thoughts]. Create a strict 'If-Then' implementation intention plan for each of these distractions so I know exactly how to react when they happen.",
+    "proTip": "Pre-making decisions reduces cognitive load. When the distraction happens, you just follow the script."
+},
+{
+    "id": "prod_9",
+    "title": "The Meeting Agenda Architect",
+    "category": "Productivity & Planning",
+    "useCase": "Designing a hyper-efficient meeting to prevent wasted time.",
+    "promptText": "I have to lead a [Length of Meeting] minute meeting about [Meeting Topic] with [List Attendees/Roles]. The final decision we MUST make by the end of this meeting is [Desired Outcome]. Draft a strict, minute-by-minute agenda that prevents us from getting off-track.",
+    "proTip": "Include a 5-minute 'parking lot' section at the end for off-topic ideas that come up during the discussion."
+},
+{
+    "id": "prod_10",
+    "title": "The Async Update Generator",
+    "category": "Productivity & Planning",
+    "useCase": "Replacing a useless status meeting with a clear text update.",
+    "promptText": "I want to cancel an upcoming status meeting and send an asynchronous update instead. Turn these rough notes into a highly scannable, professional update: What I did: [Notes on past work]. What I'm doing next: [Notes on future work]. Blockers/Needs: [Notes on what's holding you up].",
+    "proTip": "Use bullet points and bold text for names to ensure people actually read it."
+},
+{
+    "id": "prod_11",
+    "title": "The 'Saying No' Script",
+    "category": "Productivity & Planning",
+    "useCase": "Politely declining requests to protect your time.",
+    "promptText": "A [Relationship, e.g., coworker, boss, friend] asked me to [The Request]. I don't have the time or bandwidth to do this, but I want to maintain a great relationship. Write 3 different scripts to politely decline: one direct, one offering a compromise, and one referring them to someone else.",
+    "proTip": "Never use the word 'sorry' when protecting your time. Use 'I appreciate you thinking of me, but...' instead."
+},
+{
+    "id": "prod_12",
+    "title": "The Delegation Matrix",
+    "category": "Productivity & Planning",
+    "useCase": "Figuring out exactly what to hand off to a team member or VA.",
+    "promptText": "I am overwhelmed. Here are my current responsibilities: [List Responsibilities]. I have a [Role, e.g., Junior Dev, Virtual Assistant] who can help me. Identify which tasks I should delegate immediately, which I should automate, and which I absolutely must keep for myself.",
+    "proTip": "The rule of thumb: Delegate anything that someone else can do 70% as well as you can."
+},
+{
+    "id": "prod_13",
+    "title": "The Weekly Review Guide",
+    "category": "Productivity & Planning",
+    "useCase": "Conducting a personal review to close out the week cleanly.",
+    "promptText": "Act as an accountability partner. I want to do a weekly review. Ask me 5 deep, reflective questions one at a time to help me analyze what went right this week regarding my goal of [Goal], what went wrong, and how I can optimize my schedule for next week. Wait for my answer before asking the next question.",
+    "proTip": "Doing this on Friday afternoon prevents work anxiety from bleeding into your weekend."
+},
+{
+    "id": "prod_14",
+    "title": "The Skill Acquisition Roadmap",
+    "category": "Productivity & Planning",
+    "useCase": "Learning a new skill rapidly using the 20-hour framework.",
+    "promptText": "I want to learn how to [Skill, e.g., edit videos in Premiere Pro, speak basic Spanish]. I have 20 hours to dedicate to this over the next month. Deconstruct this skill into the 4-5 most crucial sub-skills I need to practice to see the fastest results, ignoring the advanced theory.",
+    "proTip": "Most people quit learning because they start with theory. Ask the AI to give you a 'hands-on project' for hour 1."
+},
+{
+    "id": "prod_15",
+    "title": "The Context-Switching Minimizer",
+    "category": "Productivity & Planning",
+    "useCase": "Batching similar tasks to reduce cognitive fatigue.",
+    "promptText": "Context switching is ruining my focus. Here is a list of all my random tasks for the week: [Insert Tasks]. Group these tasks into specific 'Batches' (e.g., Communication, Deep Work, Errands, Admin) so I can tackle them in focused sprints rather than bouncing back and forth.",
+    "proTip": "Schedule your 'Communication Batch' (emails/Slacks) to only happen twice a day, rather than keeping the tabs open."
+},
+{
+    "id": "prod_16",
+    "title": "The Project Post-Mortem",
+    "category": "Productivity & Planning",
+    "useCase": "Extracting lessons learned after completing a big project.",
+    "promptText": "We just finished a major project: [Project Name]. The things that went well were [Successes]. The things that failed or caused stress were [Failures]. Generate a formal 'Post-Mortem' report summarizing these points and providing 3 actionable systems we can implement to avoid those failures next time.",
+    "proTip": "Focus strictly on the system, not the person. Say 'The QA process failed' instead of 'John messed up'."
+},
+{
+    "id": "prod_17",
+    "title": "The OKR Draftsman",
+    "category": "Productivity & Planning",
+    "useCase": "Setting quarterly Objectives and Key Results for a team.",
+    "promptText": "Our team's main objective for this quarter is to [High Level Objective, e.g., Improve Customer Retention]. Generate 3-4 measurable, quantitative Key Results (KRs) that will prove we have achieved this objective. Make them ambitious but tracking-friendly.",
+    "proTip": "A good OKR should make you slightly uncomfortable. Aim for a 70% completion rate."
+},
+{
+    "id": "prod_18",
+    "title": "The Routine Optimizer",
+    "category": "Productivity & Planning",
+    "useCase": "Designing a realistic morning or evening routine.",
+    "promptText": "I want to build a [Morning/Evening] routine that takes exactly [Number of Minutes] minutes. My primary goals are to [Goals, e.g., wake up without snoozing, exercise, read]. Create a step-by-step timeline. Make it realistic for someone who struggles with [Personal Struggle, e.g., hitting snooze, late-night scrolling].",
+    "proTip": "The secret to a good morning routine is actually a strict evening routine to prepare for the next day."
+},
+{
+    "id": "prod_19",
+    "title": "The Procrastination Psychologist",
+    "category": "Productivity & Planning",
+    "useCase": "Getting to the root cause of why you are stuck.",
+    "promptText": "I am severely procrastinating on [Task]. I know I need to do it, but I keep putting it off. Act as a behavioral psychologist. Ask me 3 probing questions to help me identify if my procrastination is driven by fear, perfectionism, lack of clarity, or burnout. Provide a tailored solution based on my answers.",
+    "proTip": "Be completely honest with the AI. Sometimes just typing out *why* you are scared of a task diminishes the fear."
+},
+{
+    "id": "prod_20",
+    "title": "The Daily Brain Dump Organizer",
+    "category": "Productivity & Planning",
+    "useCase": "Clearing mental RAM at the end of the day.",
+    "promptText": "Here is a messy brain-dump of everything on my mind right now (ideas, anxieties, tasks, random thoughts): [Paste Brain Dump]. Act as my personal assistant. Sort this into actionable tasks, ideas to save for later, and things I just need to let go of. Format it cleanly.",
+    "proTip": "Do this 30 minutes before bed to drastically improve your sleep quality by getting open loops out of your head."
+},
+{
+    "id": "mark_1",
+    "title": "The Keyword Cluster Map",
+    "category": "Marketing & SEO",
+    "useCase": "Building topical authority for a new website or blog.",
+    "promptText": "Act as an expert SEO strategist. My website is in the [Niche/Industry] niche. The primary topic I want to rank for is [Core Topic]. Create a 'Topic Cluster' strategy with 1 Pillar Page title and 10 related Sub-Cluster blog post titles. For each sub-cluster, provide the primary long-tail keyword.",
+    "proTip": "Internal linking is crucial. Always link your sub-cluster articles back to the main pillar page to boost its authority."
+},
+{
+    "id": "mark_2",
+    "title": "The Meta Tag Optimizer",
+    "category": "Marketing & SEO",
+    "useCase": "Writing high-CTR title tags and meta descriptions.",
+    "promptText": "I am publishing a webpage about [Page Topic]. The primary keyword I want to rank for is [Primary Keyword]. Generate 5 SEO-optimized Title Tags (under 60 characters) and 5 Meta Descriptions (under 155 characters). Make them highly clickable and include a strong call-to-action.",
+    "proTip": "Include numbers, brackets [ ], or action verbs in your title tags to significantly increase organic Click-Through Rate (CTR)."
+},
+{
+    "id": "mark_3",
+    "title": "The 30-Day Content Calendar",
+    "category": "Marketing & SEO",
+    "useCase": "Planning a month of social media content in 5 minutes.",
+    "promptText": "Create a 30-day social media content calendar for a [Business Type/Niche]. The target audience is [Target Audience]. The main goal is [Marketing Goal, e.g., brand awareness, lead generation]. Format it as a table with columns: Day, Content Theme (e.g., Educational, Entertaining, Promotional), Post Format (e.g., Reel, Carousel), and a brief Post Idea.",
+    "proTip": "Follow the 80/20 rule: 80% of your calendar should provide free value, and only 20% should directly promote your product."
+},
+{
+    "id": "mark_4",
+    "title": "The PAS Ad Copywriter",
+    "category": "Marketing & SEO",
+    "useCase": "Drafting high-converting Facebook or Instagram Ads.",
+    "promptText": "Write ad copy for Facebook/Instagram promoting my [Product/Service]. Use the Problem-Agitate-Solve (PAS) copywriting framework. The target audience struggles with [Customer Pain Point]. The primary benefit of my product is [Main Benefit]. Keep the tone [Tone, e.g., empathetic, urgent].",
+    "proTip": "Ask the AI to generate 3 different 'Hooks' (the first sentence) for this ad so you can A/B test which one grabs the most attention."
+},
+{
+    "id": "mark_5",
+    "title": "The Backlink Outreach Pitch",
+    "category": "Marketing & SEO",
+    "useCase": "Sending cold emails to secure high-quality SEO backlinks.",
+    "promptText": "Write a cold outreach email to [Target Role, e.g., a blog editor, marketing manager] at [Target Website Name]. I want to ask them to add a backlink to my highly-researched article about [My Article Topic]. Mention that I noticed a broken link or an outdated stat in their article about [Their Article Topic]. Keep it short, personalized, and non-spammy.",
+    "proTip": "Never ask for a link in the very first sentence. Add value first by pointing out a typo or sharing their post on your socials."
+},
+{
+    "id": "mark_6",
+    "title": "The YouTube SEO Master",
+    "category": "Marketing & SEO",
+    "useCase": "Optimizing video metadata for the YouTube search algorithm.",
+    "promptText": "I am uploading a YouTube video about [Video Topic]. The main target keyword is [Primary Keyword]. Generate an SEO-optimized video title (high clickability), a 3-paragraph video description (including timestamps), and a comma-separated list of 15 highly relevant tags.",
+    "proTip": "Put your most important keywords in the first 2 sentences of the description, as this is what YouTube reads most heavily."
+},
+{
+    "id": "mark_7",
+    "title": "The Competitor Gap Finder",
+    "category": "Marketing & SEO",
+    "useCase": "Outranking a competitor by writing a more comprehensive article.",
+    "promptText": "My competitor is currently ranking #1 on Google for the keyword '[Target Keyword]'. Their article covers these main points: [List Competitor's Main Headers]. Act as an SEO expert and tell me what 'content gaps' they missed. Give me 5 unique angles or sections I can add to my article to make it 10x better than theirs.",
+    "proTip": "Google rewards 'Information Gain'. If you just rewrite the competitor's post, you won't outrank them. You must add net-new information."
+},
+{
+    "id": "mark_8",
+    "title": "The Welcome Email Sequence",
+    "category": "Marketing & SEO",
+    "useCase": "Nurturing new leads automatically via email.",
+    "promptText": "A user just joined my email list by downloading my free lead magnet: [Lead Magnet Topic]. Write a 3-part automated 'Welcome Sequence' email campaign. Email 1: Deliver the magnet & introduce myself. Email 2: Share a valuable related tip/story. Email 3: Soft pitch my paid product: [Paid Product Name].",
+    "proTip": "Space these emails out (e.g., Day 1, Day 2, Day 4). Build trust before asking for the sale in Email 3."
+},
+{
+    "id": "mark_9",
+    "title": "The Local SEO Booster",
+    "category": "Marketing & SEO",
+    "useCase": "Optimizing a Google Business Profile for local search.",
+    "promptText": "I own a local [Business Type, e.g., Plumber, Coffee Shop] located in [City, Neighborhood]. Write a 400-word 'From the Business' description for my Google Business Profile. Naturally weave in these local SEO keywords: [List 3-4 Local Keywords]. Highlight that we offer [Key Service/Differentiator].",
+    "proTip": "Consistency is key in Local SEO. Ensure your NAP (Name, Address, Phone number) in this profile matches exactly what is on your website."
+},
+{
+    "id": "mark_10",
+    "title": "The Buyer Persona Builder",
+    "category": "Marketing & SEO",
+    "useCase": "Creating a hyper-specific target avatar for better targeting.",
+    "promptText": "Build a detailed buyer persona for a company selling [Product/Service]. Include their age, occupation, income level, and geographic location. More importantly, list their top 3 psychological pain points, their ultimate desired transformation, and the top 3 objections they have to buying.",
+    "proTip": "Give your persona a name (e.g., 'Marketing Mary'). It makes it much easier to write copy when you imagine writing to one specific person."
+},
+{
+    "id": "mark_11",
+    "title": "The Viral Short-Form Hook",
+    "category": "Marketing & SEO",
+    "useCase": "Stopping the scroll on TikTok, Instagram Reels, or YouTube Shorts.",
+    "promptText": "I am recording a short-form video about [Video Topic]. The goal is to get views and saves. Generate 10 controversial, curiosity-driven, or highly relatable 'Hooks' (the first 3 seconds of the video script). Do not use generic greetings. Get straight to the point.",
+    "proTip": "The best hooks challenge a common belief. (e.g., 'Stop doing X. Do Y instead.')"
+},
+{
+    "id": "mark_12",
+    "title": "The E-Commerce SEO Describer",
+    "category": "Marketing & SEO",
+    "useCase": "Writing product descriptions that rank and convert.",
+    "promptText": "Write an SEO-optimized product description for an e-commerce store. The product is [Product Name]. The primary keyword is [Target Keyword]. Include a 50-word engaging opening paragraph, a bulleted list of 5 technical features, and a short FAQ section answering 2 common customer questions.",
+    "proTip": "Never use the manufacturer's default description. Google penalizes duplicate content. Always generate your own unique copy."
+},
+{
+    "id": "mark_13",
+    "title": "The Semantic Keyword (LSI) Finder",
+    "category": "Marketing & SEO",
+    "useCase": "Finding related keywords to sprinkle into your articles naturally.",
+    "promptText": "I am writing a comprehensive SEO article about '[Main Keyword]'. Give me a list of 20 LSI (Latent Semantic Indexing) keywords and related entities that Google would expect to see in an expert-level article on this topic. Group them logically by sub-topic.",
+    "proTip": "Don't keyword stuff. Use these terms naturally as H2 headers or as bullet points within your content."
+},
+{
+    "id": "mark_14",
+    "title": "The Review Generator",
+    "category": "Marketing & SEO",
+    "useCase": "Asking past clients for testimonials without being awkward.",
+    "promptText": "Write a short, polite email to a past client who recently purchased my [Service/Product]. Ask them if they would be willing to leave a Google/Trustpilot review. Provide them with a 3-question 'template' they can use to easily write the review if they don't know what to say.",
+    "proTip": "Reducing friction gets you more reviews. The template questions should be: What was the problem? What was the result? Would you recommend us?"
+},
+{
+    "id": "mark_15",
+    "title": "The Podcast Guest Pitch",
+    "category": "Marketing & SEO",
+    "useCase": "Getting booked on podcasts for digital PR and backlinks.",
+    "promptText": "Write a pitch email to the host of the [Podcast Name] podcast. My expertise is in [My Expertise/Niche]. Pitch 3 specific, unique conversation topics or controversial takes I could discuss on their show that would bring massive value to their audience. Keep the tone respectful but confident.",
+    "proTip": "Podcast hosts ignore generic pitches. Mention a specific detail from a recent episode of theirs in the first paragraph to prove you actually listen."
+},
+{
+    "id": "mark_16",
+    "title": "The A/B Test Ideator",
+    "category": "Marketing & SEO",
+    "useCase": "Brainstorming new angles to test when ad performance drops.",
+    "promptText": "My current digital ads for [Product/Service] are experiencing ad fatigue. Give me 5 completely distinct A/B testing angles I can try. (e.g., Use an Urgency angle, a Social Proof angle, an 'Us vs. Them' angle). Describe the visual creative and the primary text copy for each angle.",
+    "proTip": "Only test one variable at a time (e.g., change the image but keep the text the same) so you know exactly what caused the performance shift."
+},
+{
+    "id": "mark_17",
+    "title": "The Tagline Brainstorm",
+    "category": "Marketing & SEO",
+    "useCase": "Creating a memorable slogan for a brand or product.",
+    "promptText": "Brainstorm 10 catchy, memorable taglines for a company called [Company Name]. The company does [Describe Company Function]. The target audience is [Target Audience]. Provide a mix of short/punchy taglines, descriptive taglines, and emotional taglines.",
+    "proTip": "The best taglines are usually under 5 words. (Think Nike: 'Just Do It', or Apple: 'Think Different')."
+},
+{
+    "id": "mark_18",
+    "title": "The Freelance Writer Brief",
+    "category": "Marketing & SEO",
+    "useCase": "Delegating content creation with crystal-clear SEO instructions.",
+    "promptText": "Create a comprehensive SEO content brief to send to a freelance writer. The topic is [Article Topic] and the target keyword is [Keyword]. Outline the desired word count, the required H2s and H3s, the target audience, the desired tone of voice, and exactly what the Call to Action should be at the end.",
+    "proTip": "A good brief prevents endless revisions. Tell the writer exactly what NOT to include as well."
+},
+{
+    "id": "mark_19",
+    "title": "The Influencer Collab DM",
+    "category": "Marketing & SEO",
+    "useCase": "Reaching out to creators for UGC or sponsored posts.",
+    "promptText": "Write a direct message (DM) to an Instagram/TikTok influencer in the [Niche] space. I want to send them a free sample of my [Product] in exchange for a dedicated post or an unboxing video. Make the message sound casual, complimentary of their recent content, and mutually beneficial.",
+    "proTip": "Micro-influencers (10k-50k followers) usually have higher engagement rates and are more willing to do product-exchange deals than massive accounts."
+},
+{
+    "id": "mark_20",
+    "title": "The Product Launch Timeline",
+    "category": "Marketing & SEO",
+    "useCase": "Structuring a multi-channel marketing campaign.",
+    "promptText": "I am launching a new [Product/Feature] in exactly 14 days. Create a day-by-day marketing launch strategy. Tell me exactly what I should be posting, emailing, or doing each day leading up to the launch (The Tease phase), on Launch Day, and post-launch (The Follow-up phase).",
+    "proTip": "Don't stop marketing on Launch Day. The 3 days *after* launch usually generate the most sales if you use urgency (e.g., 'Discount ends tonight!')."
+},
+{
+    "id": "biz_1",
+    "title": "The YC Investor Grill",
+    "category": "Business & Startups",
+    "useCase": "Preparing for brutal, rapid-fire investor pitch meetings.",
+    "promptText": "Act as a ruthless Y-Combinator partner. My startup is called [Startup Name] and we are building [What You Are Building] for [Target Audience]. Ask me 5 extremely difficult, skeptical questions about my market size, defensibility, and team. Wait for my response before giving me harsh but constructive feedback.",
+    "proTip": "Don't use marketing jargon in your answers. Investors want clear, concise, and numbers-driven responses."
+},
+{
+    "id": "biz_2",
+    "title": "The Lean Canvas Generator",
+    "category": "Business & Startups",
+    "useCase": "Mapping out a 1-page business plan for a new idea.",
+    "promptText": "I have an idea for a startup that does [Startup Idea]. Generate a complete Lean Canvas for this idea. Fill out the following 9 sections: Problem, Solution, Key Metrics, Unique Value Proposition, Unfair Advantage, Channels, Customer Segments, Cost Structure, and Revenue Streams.",
+    "proTip": "Focus heavily on the 'Unfair Advantage'. If your only advantage is 'we work harder', investors won't bite."
+},
+{
+    "id": "biz_3",
+    "title": "The Competitor Matrix",
+    "category": "Business & Startups",
+    "useCase": "Analyzing the market to find gaps you can exploit.",
+    "promptText": "My startup is entering the [Industry/Niche] space. My top 3 competitors are [Competitor 1], [Competitor 2], and [Competitor 3]. Create a feature and strategy comparison matrix. Identify 3 critical 'gaps' in their offerings that my startup can use to steal market share.",
+    "proTip": "Don't just compete on features; look for gaps in customer service, pricing models, or community building."
+},
+{
+    "id": "biz_4",
+    "title": "The Pitch Deck Architect",
+    "category": "Business & Startups",
+    "useCase": "Structuring a 10-slide deck to raise capital.",
+    "promptText": "I need to build a pitch deck for my [Industry] startup to raise a [Seed / Series A] round. Give me a slide-by-slide outline for a 10-slide deck. For each slide, tell me the main headline I should use, the key data points to include, and the emotional takeaway the investor should have.",
+    "proTip": "Keep the 'Problem' slide incredibly relatable. If the investor doesn't feel the pain of the problem, they won't care about the solution."
+},
+{
+    "id": "biz_5",
+    "title": "The 'Mom Test' Interviewer",
+    "category": "Business & Startups",
+    "useCase": "Writing unbiased questions to validate a product idea.",
+    "promptText": "I want to validate my idea for a [Product Idea] targeting [Target Audience]. Write 5 user interview questions following the principles of 'The Mom Test'. The questions must focus on the user's past behavior and current problems, NOT asking them if they think my idea is good.",
+    "proTip": "Never ask 'Would you buy this?' People will lie to spare your feelings. Ask 'How much do you currently spend trying to solve this?'"
+},
+{
+    "id": "biz_6",
+    "title": "The Go-To-Market (GTM) Strategist",
+    "category": "Business & Startups",
+    "useCase": "Figuring out how to acquire your first 100 paying users.",
+    "promptText": "I am launching a B2B SaaS for [Target Audience]. The price point is [Price]. Outline a scrappy, zero-budget Go-To-Market strategy to get my first 100 paying customers. Give me 3 highly specific acquisition channels and the exact messaging I should use in those channels.",
+    "proTip": "In the early days, do things that don't scale. Sending highly personalized cold DMs usually beats running cheap ads."
+},
+{
+    "id": "biz_7",
+    "title": "The Pricing Model Brainstormer",
+    "category": "Business & Startups",
+    "useCase": "Deciding how to charge for your product.",
+    "promptText": "My product helps [Target Audience] to [Core Benefit]. Suggest 3 different pricing models (e.g., Freemium, Usage-Based, Flat Tiered). Detail the pros and cons of each for my specific business, and recommend which one I should start with.",
+    "proTip": "Value-based pricing is almost always better than cost-plus pricing. Charge based on the money or time you save the user."
+},
+{
+    "id": "biz_8",
+    "title": "The Product Hunt Launch Plan",
+    "category": "Business & Startups",
+    "useCase": "Getting top 3 on Product Hunt launch day.",
+    "promptText": "I am launching my startup on Product Hunt on [Launch Date]. Create a step-by-step checklist of what I need to do 1 week before launch, the day of the launch, and the day after. Write the copy for the 'Maker's Comment' I should post when it goes live.",
+    "proTip": "The Maker's Comment should be vulnerable. Talk about *why* you built it and the struggles you faced, not just the features."
+},
+{
+    "id": "biz_9",
+    "title": "The Cold Email to Investors",
+    "category": "Business & Startups",
+    "useCase": "Writing a cold outreach email to a VC or Angel.",
+    "promptText": "Write a 4-sentence cold email to a VC who specializes in [VC Niche]. I am raising a [Round Size] round for my startup, [Startup Name]. Our traction so far is [Insert Metric, e.g., $10k MRR, 5000 waitlist]. The goal of the email is to get a 15-minute intro call.",
+    "proTip": "Investors skim. Use bullet points for traction metrics and bold the most impressive numbers."
+},
+{
+    "id": "biz_10",
+    "title": "The Startup Naming Wizard",
+    "category": "Business & Startups",
+    "useCase": "Brainstorming modern, brandable startup names.",
+    "promptText": "I am building a company that does [Company Description] for [Target Audience]. Generate 15 modern startup names. Give me 5 names that are completely made-up words (like Google/Figma), 5 that combine two words (like Facebook/Snapchat), and 5 that use real words with a 'tech' twist.",
+    "proTip": "Once you pick a name, check trademark databases before buying the domain!"
+},
+{
+    "id": "biz_11",
+    "title": "The Unit Economics Calculator",
+    "category": "Business & Startups",
+    "useCase": "Figuring out if your business model is actually profitable.",
+    "promptText": "Act as a CFO. I sell a [Product Type] for [Price]. My Customer Acquisition Cost (CAC) is roughly [CAC Amount]. My churn rate is [Churn Rate %]. Explain how to calculate my Customer Lifetime Value (LTV) and tell me if my LTV:CAC ratio is healthy for a venture-backed startup.",
+    "proTip": "A healthy SaaS LTV:CAC ratio is generally considered to be 3:1 or higher."
+},
+{
+    "id": "biz_12",
+    "title": "The Elevator Pitch Crafter",
+    "category": "Business & Startups",
+    "useCase": "Explaining what you do in under 30 seconds.",
+    "promptText": "My startup helps [Audience] solve [Problem] by [Solution]. Write 3 versions of an elevator pitch. One version for a tech-savvy investor, one version for a potential customer, and one '5-year-old' version I can use at a dinner party.",
+    "proTip": "Avoid 'We are the Uber for X'. Focus purely on the problem you solve."
+},
+{
+    "id": "biz_13",
+    "title": "The Feature Prioritization Matrix (RICE)",
+    "category": "Business & Startups",
+    "useCase": "Deciding what to build next when everything feels urgent.",
+    "promptText": "I have 3 features I want to build: 1. [Feature 1], 2. [Feature 2], 3. [Feature 3]. Walk me through how to score these using the RICE framework (Reach, Impact, Confidence, Effort) so my engineering team knows what to tackle first.",
+    "proTip": "Effort is usually the dealbreaker. A low-impact feature with massive effort should be killed immediately."
+},
+{
+    "id": "biz_14",
+    "title": "The Co-Founder Agreement Outliner",
+    "category": "Business & Startups",
+    "useCase": "Structuring equity and vesting before things get messy.",
+    "promptText": "I am bringing on a technical co-founder. I will handle [My Roles] and they will handle [Their Roles]. Suggest a standard equity split and explain how a '4-year vesting schedule with a 1-year cliff' works in plain English so we can put it in our agreement.",
+    "proTip": "Never do a 50/50 split without vesting. If someone leaves in month 2, they shouldn't own half the company forever."
+},
+{
+    "id": "biz_15",
+    "title": "The B2B Sales Script",
+    "category": "Business & Startups",
+    "useCase": "Writing a script for cold calling or product demos.",
+    "promptText": "I am selling [B2B Software] to [Target Persona, e.g., VP of HR]. Write a 2-minute discovery call script. Include the opening hook, 3 deep 'pain-discovery' questions I should ask them, and a smooth transition to booking a full product demo.",
+    "proTip": "The best salespeople listen 80% of the time and talk 20%. Ensure your questions are open-ended."
+},
+{
+    "id": "biz_16",
+    "title": "The Churn Reduction Strategist",
+    "category": "Business & Startups",
+    "useCase": "Stopping users from canceling their subscriptions.",
+    "promptText": "My SaaS app currently has a [Number]% monthly churn rate. Users typically cancel because [Reason for Canceling]. Give me 3 immediate product changes and 3 automated email campaigns I can implement to win them back or prevent the cancellation in the first place.",
+    "proTip": "Implement an 'Exit Survey' immediately. You can't fix churn if you don't have data on exactly why they are leaving."
+},
+{
+    "id": "biz_17",
+    "title": "The Mission & Vision Statement",
+    "category": "Business & Startups",
+    "useCase": "Defining the core culture and goal of your company.",
+    "promptText": "My company is called [Company Name] and we build [Product]. Our ultimate goal in 10 years is to [Long-term Goal]. Draft a 1-sentence Mission Statement (what we do right now) and a 1-sentence Vision Statement (the future we are trying to create). Make them inspiring, not corporate jargon.",
+    "proTip": "A great vision statement acts as a filter for hiring. If a candidate doesn't align with the vision, don't hire them."
+},
+{
+    "id": "biz_18",
+    "title": "The Value Proposition Canvas",
+    "category": "Business & Startups",
+    "useCase": "Mapping exactly how your product creates customer joy.",
+    "promptText": "I am targeting [Customer Persona]. Fill out a Value Proposition Canvas for this customer. List 3 'Customer Jobs' they are trying to do, 3 'Pains' they experience, and 3 'Gains' they want. Then, list how my product, [Product Name], provides Pain Relievers and Gain Creators.",
+    "proTip": "Focus on emotional pains, not just functional ones. (e.g., 'Looking bad in front of my boss' is a huge emotional pain)."
+},
+{
+    "id": "biz_19",
+    "title": "The Pivot Brainstormer",
+    "category": "Business & Startups",
+    "useCase": "Finding a new direction when growth stalls.",
+    "promptText": "We built a [Describe Current Product], but growth is completely flat. Our users actually only use the [Specific Feature] feature, and ignore everything else. Give me 3 ideas for how we could 'pivot' the company to focus entirely on that one feature. What would the new business model look like?",
+    "proTip": "Some of the biggest companies (like Slack and Instagram) started as entirely different products before pivoting to their most popular feature."
+},
+{
+    "id": "biz_20",
+    "title": "The Freemium vs. Free Trial Decider",
+    "category": "Business & Startups",
+    "useCase": "Choosing the best way to let users test your app.",
+    "promptText": "I have a SaaS app that does [App Function]. It costs me [Cost, e.g., $0.05] every time a user runs a query. Should I offer a 14-day Free Trial or a permanent Freemium tier? Explain the psychology behind both and recommend the best path for my specific costs.",
+    "proTip": "If your marginal cost per user is high (like AI text generation), Freemium can bankrupt you quickly. Go with a Trial."
+},
+{
+    "id": "cloud_1",
+    "title": "The Dockerfile Generator",
+    "category": "Cloud & DevOps",
+    "useCase": "Containerizing an application efficiently.",
+    "promptText": "Write a highly optimized, multi-stage Dockerfile for a [Language/Framework, e.g., Node.js, Python FastAPI] application. The app runs on port [Port Number]. Ensure the final image is as small as possible and runs as a non-root user for security.",
+    "proTip": "Multi-stage builds are crucial for compiled languages (like Go or Rust) to keep the final production image tiny."
+},
+{
+    "id": "cloud_2",
+    "title": "The CI/CD Pipeline Builder",
+    "category": "Cloud & DevOps",
+    "useCase": "Automating testing and deployment with GitHub Actions.",
+    "promptText": "Generate a GitHub Actions workflow YAML file for a [Language] project. It should trigger on pushes to the 'main' branch. The pipeline needs to run tests, build a Docker image, and push the image to [Container Registry, e.g., AWS ECR, Docker Hub]. Include caching to speed up the build.",
+    "proTip": "Never hardcode secrets in your YAML. Always ask the AI to use `${{ secrets.MY_SECRET }}`."
+},
+{
+    "id": "cloud_3",
+    "title": "The Terraform Scripter",
+    "category": "Cloud & DevOps",
+    "useCase": "Defining Infrastructure as Code (IaC) for cloud providers.",
+    "promptText": "Write a Terraform script (main.tf) to provision an [Cloud Provider, e.g., AWS] infrastructure. I need an EC2 instance running Ubuntu, a security group that allows SSH (port 22) and HTTP (port 80), and an attached RDS PostgreSQL database. Use best practices for variable management.",
+    "proTip": "Always ask the AI to split the code into `main.tf`, `variables.tf`, and `outputs.tf` for better maintainability."
+},
+{
+    "id": "cloud_4",
+    "title": "The AWS Architecture Planner",
+    "category": "Cloud & DevOps",
+    "useCase": "Designing scalable, highly-available cloud systems.",
+    "promptText": "I am designing a backend architecture for a highly scalable [App Type, e.g., e-commerce site, video streaming app] using AWS. The traffic will be spiky. Outline the services I should use for Compute, Database, Storage, and Caching. Explain how traffic flows from the user to the database.",
+    "proTip": "Ask the AI to design for 'High Availability' (Multi-AZ) and 'Fault Tolerance'."
+},
+{
+    "id": "cloud_5",
+    "title": "The Bash Automation Script",
+    "category": "Cloud & DevOps",
+    "useCase": "Writing Linux shell scripts for server maintenance.",
+    "promptText": "Write a robust bash script that will automatically [Task, e.g., backup a PostgreSQL database, tar the file, and upload it to an S3 bucket]. The script should include error handling, logging, and exit immediately if any command fails (set -e).",
+    "proTip": "Add a cron expression request to the prompt so you know exactly how to schedule the script to run daily."
+},
+{
+    "id": "cloud_6",
+    "title": "The Kubernetes Manifest Writer",
+    "category": "Cloud & DevOps",
+    "useCase": "Deploying apps to a K8s cluster without fighting YAML.",
+    "promptText": "Generate Kubernetes YAML manifests for a [App Name] deployment. I need a Deployment with 3 replicas, a Service of type [Service Type, e.g., ClusterIP, LoadBalancer], and an Ingress rule mapping to [Domain Name]. Include resource limits (CPU/Memory) for the containers.",
+    "proTip": "Resource limits are essential. Without them, a memory leak in one pod can crash your entire Kubernetes node."
+},
+{
+    "id": "cloud_7",
+    "title": "The IAM Policy Architect",
+    "category": "Cloud & DevOps",
+    "useCase": "Generating secure, least-privilege cloud permissions.",
+    "promptText": "Write an AWS IAM JSON policy that follows the principle of least privilege. The user/role only needs permission to [Specific Action, e.g., read and write to a specific S3 bucket named 'my-app-assets', and trigger a specific Lambda function]. Deny all other access.",
+    "proTip": "Never use `\"Action\": \"s3:*\"` in production. Always narrow it down to exactly `GetObject` and `PutObject`."
+},
+{
+    "id": "cloud_8",
+    "title": "The Cloud Cost Optimizer",
+    "category": "Cloud & DevOps",
+    "useCase": "Finding ways to slash your AWS/GCP/Azure bill.",
+    "promptText": "My AWS bill is getting too high. We heavily use [List Heavy Services, e.g., EC2, RDS, NAT Gateways]. Give me 5 advanced strategies to optimize our cloud costs without sacrificing performance or uptime. Specifically mention Reserved Instances and Spot Instances if applicable.",
+    "proTip": "NAT Gateways are notorious for hidden data transfer costs. Ask the AI for alternatives like VPC Endpoints."
+},
+{
+    "id": "cloud_9",
+    "title": "The Nginx Config Generator",
+    "category": "Cloud & DevOps",
+    "useCase": "Setting up reverse proxies and SSL.",
+    "promptText": "Generate a production-ready Nginx configuration file (`nginx.conf`). It needs to act as a reverse proxy, listening on port 80 and 443, redirecting HTTP to HTTPS, and forwarding traffic to a backend app running on `localhost:[Port]`. Include basic security headers.",
+    "proTip": "Ask the AI to include Let's Encrypt (Certbot) snippets if you are setting this up on a fresh VPS."
+},
+{
+    "id": "cloud_10",
+    "title": "The Prometheus Alert Rules",
+    "category": "Cloud & DevOps",
+    "useCase": "Setting up monitoring alerts before things crash.",
+    "promptText": "I am using Prometheus and Alertmanager. Write the YAML alert rules for a [Service Type, e.g., Node Exporter, PostgreSQL]. Create a critical alert if CPU usage goes over 85% for 5 minutes, and a warning alert if disk space drops below 15%.",
+    "proTip": "Alert fatigue is real. Make sure you set a reasonable `for:` duration so random 10-second spikes don't wake you up at 3 AM."
+},
+{
+    "id": "cloud_11",
+    "title": "The Incident Post-Mortem",
+    "category": "Cloud & DevOps",
+    "useCase": "Writing a blameless Root Cause Analysis (RCA) after downtime.",
+    "promptText": "We just had a major production incident where [Describe Outage, e.g., the database ran out of connections due to a bad code push]. Write a formal, blameless Post-Mortem document. Include sections for: Lead-up, Fault, Impact, Root Cause (using the 5 Whys), and Action Items to prevent recurrence.",
+    "proTip": "Blameless RCAs focus on systemic failures. Instead of 'Dev pushed bad code', write 'CI/CD pipeline lacked testing for max connections'."
+},
+{
+    "id": "cloud_12",
+    "title": "The Server Hardening Checklist",
+    "category": "Cloud & DevOps",
+    "useCase": "Securing a fresh Linux VPS against attacks.",
+    "promptText": "I just provisioned a fresh [OS, e.g., Ubuntu 22.04] server on DigitalOcean/AWS. Give me a step-by-step bash script or checklist to harden the server. Include setting up a firewall (UFW), disabling root SSH login, changing the default SSH port, and setting up Fail2Ban.",
+    "proTip": "Always verify your new SSH port works in a separate terminal before closing your current root session, or you'll lock yourself out!"
+},
+{
+    "id": "cloud_13",
+    "title": "The Log Analysis Regex",
+    "category": "Cloud & DevOps",
+    "useCase": "Parsing massive access logs to find errors or hackers.",
+    "promptText": "I have a massive [Server Type, e.g., Nginx, Apache] access log. I need a grep/awk command or a Regex pattern to parse this log and extract only the [Data Needed, e.g., IP addresses that received a 500 Internal Server Error]. Provide the command and explain how it filters the text.",
+    "proTip": "You can also ask the AI to sort the output and `uniq -c` to count the most frequent offending IP addresses."
+},
+{
+    "id": "cloud_14",
+    "title": "The Serverless Function Outliner",
+    "category": "Cloud & DevOps",
+    "useCase": "Writing scalable AWS Lambda functions.",
+    "promptText": "Write the code for an AWS Lambda function in [Language, e.g., Python, Node.js]. The function is triggered by an S3 event when a [File Type] is uploaded. It needs to [Action, e.g., resize the image, parse the CSV] and save the result to a DynamoDB table. Include the necessary IAM permissions required.",
+    "proTip": "Lambda timeouts default to 3 seconds. Ask the AI what timeout and memory size you should configure for your specific task."
+},
+{
+    "id": "cloud_15",
+    "title": "The Ansible Playbook Creator",
+    "category": "Cloud & DevOps",
+    "useCase": "Automating server configuration management.",
+    "promptText": "Write an Ansible playbook in YAML. It needs to target the `[Host Group]` group. The playbook should update apt packages, install [Software List, e.g., Docker, Git, htop], and start the Docker service. Ensure the tasks are idempotent.",
+    "proTip": "Idempotency is the golden rule of Ansible. Running the playbook 10 times should result in the exact same state as running it once."
+},
+{
+    "id": "cloud_16",
+    "title": "The Network CIDR Planner",
+    "category": "Cloud & DevOps",
+    "useCase": "Designing an AWS VPC without IP collisions.",
+    "promptText": "I am creating a new AWS VPC. I need a base CIDR block of [CIDR, e.g., 10.0.0.0/16]. Divide this into 2 Public Subnets and 2 Private Subnets across two Availability Zones. Tell me the exact CIDR ranges for each subnet and how many usable IPs they contain.",
+    "proTip": "Leave gaps in your IP planning! Ask the AI to reserve space for future subnets (like database-specific subnets)."
+},
+{
+    "id": "cloud_17",
+    "title": "The Load Balancing Strategist",
+    "category": "Cloud & DevOps",
+    "useCase": "Deciding how to route traffic to your servers.",
+    "promptText": "I am setting up a load balancer for my [App Type] application. Should I use a Layer 4 (Network/TCP) load balancer or a Layer 7 (Application/HTTP) load balancer? Explain the difference, the pros/cons of each, and recommend the best strategy for sticky sessions.",
+    "proTip": "If you need to route traffic based on the URL path (e.g., `/api` goes to one server, `/blog` to another), you MUST use Layer 7."
+},
+{
+    "id": "cloud_18",
+    "title": "The Database Migration Script",
+    "category": "Cloud & DevOps",
+    "useCase": "Safely altering database schemas in production.",
+    "promptText": "I need to write a zero-downtime database migration for a [Database Type, e.g., PostgreSQL] database. I need to add a new column called `[Column Name]` to the `[Table Name]` table, backfill it with a default value of `[Value]`, and then make it NOT NULL. Provide the SQL commands.",
+    "proTip": "Adding a default value to a massive table can lock the table and cause downtime. Ask the AI for the 'concurrent' or safe approach."
+},
+{
+    "id": "cloud_19",
+    "title": "The Helm Chart Structurer",
+    "category": "Cloud & DevOps",
+    "useCase": "Packaging Kubernetes applications.",
+    "promptText": "Explain the directory structure of a standard Helm Chart for a [App Type] application. Provide a boilerplate `values.yaml` file that includes configurable variables for image repository, image tag, replica count, and ingress hostnames.",
+    "proTip": "Helm templates can get messy. Keep your `values.yaml` clean and well-commented so other developers know what they can override."
+},
+{
+    "id": "cloud_20",
+    "title": "The Command Line Troubleshooter",
+    "category": "Cloud & DevOps",
+    "useCase": "Figuring out why a Linux server is failing.",
+    "promptText": "My Linux server is currently [Symptom, e.g., running at 100% CPU, running out of disk space, dropping network packets]. Give me the top 5 bash commands I should run immediately to diagnose the root cause, and explain exactly what I should be looking for in the output.",
+    "proTip": "Commands like `htop`, `df -h`, and `netstat -tulpn` are lifesavers. Ask the AI how to interpret the specific columns they output."
+},
+
+{
+    "id": "lang_1",
+    "title": "The Immersive Roleplayer",
+    "category": "Language Learning",
+    "useCase": "Practicing real-life conversations before traveling.",
+    "promptText": "Act as a native [Target Language] speaker who works as a [Role, e.g., waiter, train ticket agent] in [City/Country]. I am a tourist trying to [Goal, e.g., order a traditional meal, find my platform]. Let's roleplay. Speak only in [Target Language]. Wait for my response before replying. Correct my mistakes in English at the end of each reply.",
+    "proTip": "Tell the AI to keep its responses at a specific proficiency level (e.g., A2 Beginner or B2 Intermediate) so it doesn't overwhelm you."
+},
+{
+    "id": "lang_2",
+    "title": "The Grammar Demystifier",
+    "category": "Language Learning",
+    "useCase": "Understanding confusing grammar rules without a textbook.",
+    "promptText": "I am learning [Target Language]. I am constantly confused by the difference between [Grammar Rule 1, e.g., Por] and [Grammar Rule 2, e.g., Para]. Explain the difference in plain English, provide 3 simple examples for each, and then give me a 5-question quiz to test my understanding.",
+    "proTip": "Don't just read the explanation—actually answer the quiz! Active recall is the fastest way to cement grammar rules."
+},
+{
+    "id": "lang_3",
+    "title": "The Local Slang Translator",
+    "category": "Language Learning",
+    "useCase": "Sounding like a local, not a textbook robot.",
+    "promptText": "I am traveling to [Specific City/Region, e.g., Buenos Aires, Argentina]. Textbooks teach me standard [Language, e.g., Spanish], but I want to sound like a local. Give me 10 common slang words or idioms specific to this exact region, what they literally mean, and how to use them in a casual sentence.",
+    "proTip": "Regional dialects matter. Spanish in Madrid is wildly different from Spanish in Mexico City. Always specify the exact city."
+},
+{
+    "id": "lang_4",
+    "title": "The Flashcard Generator",
+    "category": "Language Learning",
+    "useCase": "Building Anki or Quizlet decks rapidly.",
+    "promptText": "I am learning [Target Language]. Generate a table of 20 high-frequency vocabulary words related to [Topic, e.g., navigating an airport, medical emergencies]. Column 1: The word in [Target Language]. Column 2: The English translation. Column 3: A practical example sentence in [Target Language].",
+    "proTip": "You can export this table directly as a CSV and import it into Anki or Quizlet in seconds."
+},
+{
+    "id": "lang_5",
+    "title": "The Tone & Politeness Checker",
+    "category": "Language Learning",
+    "useCase": "Avoiding accidental rudeness in formal cultures.",
+    "promptText": "I need to send an email to a [Recipient, e.g., potential boss, landlord] in [Target Language]. I drafted this: [Insert Draft]. Correct my grammar, but more importantly, adjust the 'politeness level' (formality) to perfectly match the cultural expectations of [Target Country]. Explain what you changed.",
+    "proTip": "Languages like Japanese and Korean have strict formality hierarchies. Always specify who you are talking to."
+},
+{
+    "id": "lang_6",
+    "title": "The Journal Corrector",
+    "category": "Language Learning",
+    "useCase": "Getting instant feedback on your daily writing practice.",
+    "promptText": "I wrote a short diary entry in [Target Language] to practice my writing. Here it is: [Insert Text]. First, point out my grammatical errors and unnatural phrasing. Then, rewrite the entire entry exactly how a native speaker would actually say it.",
+    "proTip": "Compare your original text side-by-side with the AI's rewrite. Note the different prepositions and verb choices."
+},
+{
+    "id": "lang_7",
+    "title": "The False Friend Finder",
+    "category": "Language Learning",
+    "useCase": "Avoiding embarrassing translation mistakes.",
+    "promptText": "I am a native English speaker learning [Target Language]. Provide a list of the 10 most dangerous 'false friends' (cognates that look like English words but mean something completely different). Explain the real meaning and how to actually say the English word I was thinking of.",
+    "proTip": "For example, 'Embarazada' in Spanish means pregnant, not embarrassed! This prompt saves you from awkward moments."
+},
+{
+    "id": "lang_8",
+    "title": "The Graded Reader Storyteller",
+    "category": "Language Learning",
+    "useCase": "Practicing reading comprehension at your exact level.",
+    "promptText": "Write a short, engaging fiction story (about 300 words) in [Target Language] about [Topic, e.g., a detective solving a mystery]. Keep the vocabulary and grammar strictly at a [CEFR Level, e.g., A2, B1] proficiency level. At the end, ask me 3 reading comprehension questions in English.",
+    "proTip": "If a word is too hard, ask the AI to generate a glossary of the top 10 hardest words before the story begins."
+},
+{
+    "id": "lang_9",
+    "title": "The Phonetic Pronunciation Guide",
+    "category": "Language Learning",
+    "useCase": "Nailing difficult sounds and accents.",
+    "promptText": "I am struggling to pronounce the [Specific Sound, e.g., rolled 'R' in Spanish, French 'U']. Explain the exact physical tongue and lip placement required to make this sound. Give me 5 phonetic warm-up exercises to practice.",
+    "proTip": "Use this in combination with a text-to-speech tool to hear the sound while you practice the physical mouth movements."
+},
+{
+    "id": "lang_10",
+    "title": "The Pop Culture Translator",
+    "category": "Language Learning",
+    "useCase": "Learning through music, movies, and TV.",
+    "promptText": "Analyze the lyrics to the song [Song Name] by [Artist] in [Target Language]. Provide the original lyrics, the direct English translation, and a breakdown of any slang, cultural references, or poetic metaphors used in the song.",
+    "proTip": "Listening to music with a deep understanding of the lyrics is one of the best passive immersion techniques."
+},
+{
+    "id": "lang_11",
+    "title": "The Idiom Decoder",
+    "category": "Language Learning",
+    "useCase": "Understanding phrases that make zero sense literally.",
+    "promptText": "In English, we say [English Idiom, e.g., 'It's raining cats and dogs' or 'Break a leg']. What is the exact equivalent idiom in [Target Language]? Provide the literal translation of their idiom and an example of how to use it in conversation.",
+    "proTip": "Translating idioms literally usually results in nonsense. Always ask for the *cultural equivalent*."
+},
+{
+    "id": "lang_12",
+    "title": "The Debate Partner",
+    "category": "Language Learning",
+    "useCase": "Practicing advanced, argumentative vocabulary.",
+    "promptText": "I want to practice my advanced [Target Language]. Let's debate the topic: [Debate Topic, e.g., Is remote work better than office work?]. You take the opposing side. Speak at a [CEFR Level, e.g., C1] level. Make a strong argument and wait for my rebuttal.",
+    "proTip": "This forces you to learn transition words like 'Furthermore', 'However', and 'On the contrary' in your target language."
+},
+{
+    "id": "lang_13",
+    "title": "The Menu Navigator",
+    "category": "Language Learning",
+    "useCase": "Ordering food confidently without pointing at pictures.",
+    "promptText": "I am going to a traditional restaurant in [Country/Region]. List 10 authentic local dishes I will likely see on the menu. Explain what they are in English, and provide the phonetic pronunciation for how to order them politely in [Target Language].",
+    "proTip": "Ask the AI to include phrases for dietary restrictions (e.g., 'Does this have peanuts?', 'I am vegetarian')."
+},
+{
+    "id": "lang_14",
+    "title": "The Etiquette & Taboo Guide",
+    "category": "Language Learning",
+    "useCase": "Avoiding cultural faux pas while traveling.",
+    "promptText": "I am traveling to [Country] for the first time. Beyond just the language, what are 5 strict cultural do's and don'ts? Specifically, tell me about greeting etiquette, tipping culture, and one common gesture tourists make that is actually offensive there.",
+    "proTip": "Language is only half the battle; cultural context is the other half. Knowing how to bow or shake hands changes everything."
+},
+{
+    "id": "lang_15",
+    "title": "The Mnemonic Creator",
+    "category": "Language Learning",
+    "useCase": "Memorizing stubborn vocabulary words that won't stick.",
+    "promptText": "I am trying to memorize the [Target Language] word '[Target Word]', which means '[English Meaning]'. Create 3 funny, bizarre, or highly visual mnemonic memory hooks to help me permanently remember this word.",
+    "proTip": "The weirder the mental image, the more likely your brain is to remember it. Don't be afraid to ask for 'ridiculous' mnemonics."
+},
+{
+    "id": "lang_16",
+    "title": "The Transition Word Bank",
+    "category": "Language Learning",
+    "useCase": "Sounding fluent by connecting your sentences smoothly.",
+    "promptText": "My [Target Language] sounds very choppy. I just string simple sentences together. Give me a categorized list of 15 essential 'transition words' (e.g., however, therefore, suddenly, by the way) with example sentences showing how to use them to flow better.",
+    "proTip": "Transition words are the secret to moving from an A2 (Beginner) to a B1 (Intermediate) speaking level."
+},
+{
+    "id": "lang_17",
+    "title": "The Test Prep Examiner (JLPT, DELE, etc.)",
+    "category": "Language Learning",
+    "useCase": "Simulating official language proficiency exams.",
+    "promptText": "I am studying for the [Exam Name, e.g., JLPT N3, DELE B2, DELF]. Generate a mock 'Reading Comprehension' section specifically tailored to this exact exam level. Provide a short text, followed by 3 multiple-choice questions. Do not give me the answers until I guess.",
+    "proTip": "Specify the exam name. AI knows the exact formatting and vocabulary lists for major global language exams."
+},
+{
+    "id": "lang_18",
+    "title": "The Suffix/Prefix Expander",
+    "category": "Language Learning",
+    "useCase": "Multiplying your vocabulary by understanding word roots.",
+    "promptText": "In [Target Language], how do prefixes and suffixes work? Take the root word for '[Root Word, e.g., Write, Speak]' and show me how adding different prefixes or suffixes creates 5-10 completely new words. Explain the pattern.",
+    "proTip": "Learning patterns is faster than memorizing individual words. Once you know how '-tion' translates, you unlock hundreds of words."
+},
+{
+    "id": "lang_19",
+    "title": "The Tense Time-Traveler",
+    "category": "Language Learning",
+    "useCase": "Mastering past, present, and future conjugations.",
+    "promptText": "I struggle with verb conjugations in [Target Language]. Give me a simple paragraph written entirely in the Present Tense about a daily routine. Then, rewrite that exact same paragraph in the [Target Tense, e.g., Preterite Past, Future Perfect]. Bold the verbs that changed.",
+    "proTip": "Seeing the exact same story shift timelines helps your brain isolate exactly how the verbs mutate."
+},
+{
+    "id": "lang_20",
+    "title": "The Language Immersion Planner",
+    "category": "Language Learning",
+    "useCase": "Creating a daily routine to surround yourself with the language.",
+    "promptText": "I want to learn [Target Language] but I live in [Your Country] and can't travel. Create a daily 'At-Home Immersion' routine that requires exactly [Minutes] minutes a day. Include passive methods (like podcasts/music) and active methods. Suggest specific media or apps.",
+    "proTip": "Change your phone and laptop OS language to your target language for guaranteed daily passive exposure."
+},
+{
+    "id": "fin_1",
+    "title": "The Debt Destroyer (Avalanche vs Snowball)",
+    "category": "Personal Finance",
+    "useCase": "Creating a mathematical and psychological plan to get out of debt.",
+    "promptText": "I have [Number] debts. Debt 1: [Amount] at [APR]%. Debt 2: [Amount] at [APR]%. Debt 3: [Amount] at [APR]%. I have an extra [Monthly Budget] per month to put towards debt. Compare the 'Debt Snowball' and 'Debt Avalanche' methods for my specific numbers. Which one saves me more money, and which one gets me a win faster?",
+    "proTip": "The Avalanche method always saves the most money (math), but the Snowball method builds the most momentum (psychology)."
+},
+{
+    "id": "fin_2",
+    "title": "The ELI5 Investing Explainer",
+    "category": "Personal Finance",
+    "useCase": "Understanding Wall Street jargon without a finance degree.",
+    "promptText": "Explain the difference between [Financial Concept A, e.g., an ETF] and [Financial Concept B, e.g., a Mutual Fund] like I am a 5-year-old. Use a simple, everyday analogy (like buying groceries or pizza) to explain the fees, the risks, and why someone would choose one over the other.",
+    "proTip": "Use this prompt to decode anything: Roth IRA vs. Traditional IRA, Stocks vs. Bonds, or Crypto vs. Fiat."
+},
+{
+    "id": "fin_3",
+    "title": "The 50/30/20 Budget Architect",
+    "category": "Personal Finance",
+    "useCase": "Structuring your paycheck instantly based on standard rules.",
+    "promptText": "My monthly take-home pay (after taxes) is [Income Amount]. Create a strict 50/30/20 budget for me. Calculate the exact dollar amounts for 'Needs' (50%), 'Wants' (30%), and 'Savings/Investing' (20%). Give me 3 examples of expenses that fit into each category.",
+    "proTip": "If you live in a high-cost-of-living city, ask the AI to adjust the ratio to 60/20/20 to account for higher rent."
+},
+{
+    "id": "fin_4",
+    "title": "The Expense Audit Interrogator",
+    "category": "Personal Finance",
+    "useCase": "Finding the 'leaks' in your monthly spending.",
+    "promptText": "Act as a strict financial advisor. I spend roughly [Amount] on groceries, [Amount] on dining out/delivery, and [Amount] on subscriptions every month. Tell me the harsh truth about my spending. Ask me 3 challenging questions to help me cut the fat from this budget without feeling miserable.",
+    "proTip": "People usually underestimate their dining out budget by 30%. Pull your actual bank statements before inputting these numbers."
+},
+{
+    "id": "fin_5",
+    "title": "The Emergency Fund Calculator",
+    "category": "Personal Finance",
+    "useCase": "Figuring out exactly how much cash you need to be safe.",
+    "promptText": "My absolute bare-minimum survival expenses (rent, groceries, basic utilities) are [Amount] per month. I work as a [Your Profession/Industry]. Based on the current job market and my industry, should my emergency fund be 3, 6, or 12 months? Calculate the exact goal amount and give me a monthly saving plan to hit it in [Timeframe].",
+    "proTip": "Freelancers and gig workers usually need a 6-12 month fund, while tenured public workers might only need 3 months."
+},
+{
+    "id": "fin_6",
+    "title": "The Compound Interest Time-Traveler",
+    "category": "Personal Finance",
+    "useCase": "Visualizing how small investments turn into millions.",
+    "promptText": "I am [Age] years old. I have [Current Savings] invested right now. If I invest [Monthly Contribution] every single month into an S&P 500 index fund (assuming a 7% average annual return adjusted for inflation), exactly how much money will I have when I am 65? How much of that total is just pure compound interest?",
+    "proTip": "Ask the AI to show you how much you'd lose if you wait just 5 years to start doing this. The 'Cost of Waiting' is staggering."
+},
+{
+    "id": "fin_7",
+    "title": "The Salary Negotiation Script",
+    "category": "Personal Finance",
+    "useCase": "Getting paid what you are worth without sounding arrogant.",
+    "promptText": "I have been offered a job as a [Job Title]. They offered [Offer Amount], but the market rate is closer to [Target Amount]. Write a professional, collaborative email to the recruiter negotiating for [Target Amount]. Focus the argument on my unique value: [Your Unique Skill/Experience].",
+    "proTip": "Never anchor on your personal expenses (e.g., 'I need more for rent'). Always anchor on market data and the value you bring."
+},
+{
+    "id": "fin_8",
+    "title": "The Bill Negotiation Script",
+    "category": "Personal Finance",
+    "useCase": "Lowering your internet, cable, or insurance bills over the phone.",
+    "promptText": "I need to call my [Company Type, e.g., Internet Provider, Car Insurance] to lower my monthly bill, which is currently [Current Bill Amount]. Write a step-by-step phone script. Include exactly what to say to the first rep, how to ask for the Retention Department, and what competitor threat I should use.",
+    "proTip": "The 'Retention Department' (or cancellations) is the only department with the actual power to lower your bill."
+},
+{
+    "id": "fin_9",
+    "title": "The Credit Score Optimizer",
+    "category": "Personal Finance",
+    "useCase": "Understanding the exact levers that dictate your FICO score.",
+    "promptText": "My credit score recently dropped, or I want to improve it. Explain the 5 main factors that make up a FICO credit score (Payment History, Utilization, Age, Mix, New Credit) and give me one highly actionable tactic to immediately improve my 'Credit Utilization Ratio' without paying off debt.",
+    "proTip": "A quick hack to lower utilization is asking your credit card company for a 'Credit Limit Increase' while keeping your spending the same."
+},
+{
+    "id": "fin_10",
+    "title": "The Rent vs. Buy Math Engine",
+    "category": "Personal Finance",
+    "useCase": "Making the biggest financial decision of your life with math, not emotion.",
+    "promptText": "I am debating renting vs. buying a home. Rent for a place I like is [Rent Amount]/month. A similar home costs [Home Price] with a [Interest Rate]% mortgage rate. Factor in taxes, maintenance (1% rule), insurance, and the opportunity cost of investing my down payment. Give me a 10-year financial breakdown of which is actually cheaper.",
+    "proTip": "Most people forget the 'Opportunity Cost'. If you invest a $50k down payment in the stock market instead of a house, it grows significantly."
+},
+{
+    "id": "fin_11",
+    "title": "The Side Hustle Brainstormer",
+    "category": "Personal Finance",
+    "useCase": "Finding realistic ways to increase your income based on your skills.",
+    "promptText": "I want to start a side hustle to make an extra [Target Amount] a month. My day job is [Current Job], my core skills are [List 3 Skills], and I have [Number of Hours] hours a week to dedicate to this. Give me 5 realistic, low-upfront-cost side hustle ideas. Rank them by how fast they can generate the first $100.",
+    "proTip": "Avoid passive income pipe-dreams. Ask the AI for 'active' freelancing or service-based hustles for the fastest cash flow."
+},
+{
+    "id": "fin_12",
+    "title": "The Financial Milestone Roadmap",
+    "category": "Personal Finance",
+    "useCase": "Breaking down a massive financial goal into daily targets.",
+    "promptText": "I want to save [Target Amount] for a [Goal, e.g., house down payment, wedding] in exactly [Number of Months] months. Break this massive number down. How much do I need to save per month, per week, and per day? Suggest 3 daily habits I can cut to hit this daily target.",
+    "proTip": "Seeing a $20,000 goal as just '$18 a day' makes it psychologically much easier to achieve."
+},
+{
+    "id": "fin_13",
+    "title": "The 'FIRE' Number Calculator",
+    "category": "Personal Finance",
+    "useCase": "Calculating exactly how much you need to retire early.",
+    "promptText": "I am interested in the FIRE movement (Financial Independence, Retire Early). My estimated annual expenses in retirement will be [Annual Expense Amount]. Explain the '4% Rule' (Trinity Study) and calculate my exact 'FIRE Number'. Then, tell me how a 3.5% safe withdrawal rate changes that target.",
+    "proTip": "The basic math is just your annual expenses multiplied by 25. The hard part is getting there."
+},
+{
+    "id": "fin_14",
+    "title": "The Psychology of Spending",
+    "category": "Personal Finance",
+    "useCase": "Identifying emotional triggers that ruin your budget.",
+    "promptText": "I often impulse-buy things online late at night or when I am stressed. Act as a financial therapist. Explain the dopamine loop of impulse shopping and give me 3 psychological friction tactics (e.g., the 24-hour rule) I can implement to stop myself from checking out.",
+    "proTip": "Ask the AI to draft a 'Pre-Purchase Checklist' you can stick on your monitor before buying anything over $50."
+},
+{
+    "id": "fin_15",
+    "title": "The Subscription Purge Audit",
+    "category": "Personal Finance",
+    "useCase": "Finding hidden monthly costs.",
+    "promptText": "I have the following recurring monthly subscriptions: [List Subscriptions and Prices]. Categorize them into 'High Value' and 'Low Value'. Calculate how much I am spending per year on these. If I cancel the bottom 3 and invest that money at 7% for 10 years, how much will I have?",
+    "proTip": "People look at subscriptions as '$10 a month', but you should look at them as '$120 a year'. The annual framing changes everything."
+},
+{
+    "id": "fin_16",
+    "title": "The Tax Basics Translator",
+    "category": "Personal Finance",
+    "useCase": "Understanding marginal tax brackets.",
+    "promptText": "Explain how 'Marginal Tax Brackets' work using a simple analogy (like filling up buckets of water). If I get a raise that pushes me into a higher tax bracket, will my entire income be taxed at that higher rate? Debunk this common myth.",
+    "proTip": "Never decline a raise because you think taxes will make you earn less. That is mathematically impossible in a marginal system."
+},
+{
+    "id": "fin_17",
+    "title": "The Freelance Tax Prep",
+    "category": "Personal Finance",
+    "useCase": "Preparing for self-employment taxes without panic.",
+    "promptText": "I just started freelancing/gig work as a [Job Type] and I expect to make [Estimated Income] this year. I live in [State/Country]. Explain how 'Self-Employment Tax' works, why I need to pay quarterly estimated taxes, and exactly what percentage of every paycheck I should hide in a separate savings account.",
+    "proTip": "A common rule of thumb is hiding 30% of every freelance check for taxes, but ask the AI for specifics based on your state."
+},
+{
+    "id": "fin_18",
+    "title": "The Asset Allocation Architect",
+    "category": "Personal Finance",
+    "useCase": "Understanding how to balance risk in an investment portfolio.",
+    "promptText": "I am [Age] years old. I have a [Risk Tolerance, e.g., conservative, aggressive] risk tolerance. Explain the concept of 'Asset Allocation' (Stocks vs. Bonds). What is a standard portfolio breakdown for someone my age? Mention the '110 minus your age' rule and explain why it exists.",
+    "proTip": "This is for educational purposes only. Always consult a real fiduciary before making massive portfolio changes."
+},
+{
+    "id": "fin_19",
+    "title": "The Inflation & Purchasing Power Guide",
+    "category": "Personal Finance",
+    "useCase": "Understanding why leaving cash in a checking account is losing money.",
+    "promptText": "I have [Amount] sitting in a regular checking account earning 0% interest. Assuming an average annual inflation rate of 3%, calculate how much 'purchasing power' this money will lose in 5 years and 10 years. Explain the concept of a High-Yield Savings Account (HYSA) as a defense.",
+    "proTip": "Inflation is the invisible tax. Ask the AI to compare your checking account against a 4.5% HYSA over 5 years."
+},
+{
+    "id": "fin_20",
+    "title": "The Weekly Money Routine",
+    "category": "Personal Finance",
+    "useCase": "Creating a low-stress habit for managing wealth.",
+    "promptText": "I get anxious looking at my bank account. Create a low-stress, 15-minute 'Financial Friday' routine for me. What are the 3 exact things I should check, update, or pay every single week to stay in control of my money without obsessing over it daily?",
+    "proTip": "Consistency beats intensity. A 15-minute weekly check-in is infinitely better than a 4-hour stressful budget overhaul once a year."
+}
+]
