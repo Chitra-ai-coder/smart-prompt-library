@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Smart Prompt Library</title>
     
     <style>
@@ -40,7 +40,7 @@
         .orb-3 { top: 40%; left: 40%; width: 40vw; height: 40vw; background: #818cf8; opacity: 0.3; }
         @keyframes float { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(5%, 10%) scale(1.1); } }
 
-        /* ================= HEADER ================= */
+        /* ================= HEADER (Floating with Rounded Corners) ================= */
         .main-header { 
             position: fixed; 
             top: 20px; 
@@ -56,7 +56,6 @@
             box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
             z-index: 90; opacity: 0; 
             
-            /* INSTANT ANIMATION: Fast 0.4s drop, 0 delay */
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0s; 
             
             display: flex; align-items: center; justify-content: space-between; 
@@ -65,7 +64,6 @@
         .header-logo { font-size: 1.35rem; font-weight: 800; color: var(--text-main); letter-spacing: -0.02em; display: flex; align-items: center; gap: 8px; }
         .header-logo span { background: var(--accent-gradient); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         
-        /* The Tagline Styling */
         .tagline-text { font-size: 0.95rem; font-weight: 700; color: var(--text-main); opacity: 0.9; display: flex; align-items: center; gap: 8px; }
         .tagline-text svg { color: var(--primary-color); }
 
@@ -75,7 +73,6 @@
             display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; 
             padding: 20px; z-index: 9999; 
             
-            /* Solid Gradient Finish */
             background-color: #ffffff;
             background-image: 
                 radial-gradient(at 0% 0%, #e0e7ff 0px, transparent 50%),
@@ -89,18 +86,15 @@
         .hero.fade-out { opacity: 0; transform: scale(1.02); pointer-events: none; }
         .hero-content { max-width: 850px; animation: fadeUpIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; position: relative; z-index: 2; }
         
-        /* Floating Glass Decorative Cards */
         .floating-ui { position: absolute; background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.9); border-radius: 20px; padding: 24px; box-shadow: 0 20px 40px rgba(99, 102, 241, 0.08); z-index: 1; pointer-events: none; }
         .ui-1 { top: 15%; left: 10%; width: 280px; transform: rotate(-6deg); animation: floatUi1 12s infinite ease-in-out alternate; }
         .ui-2 { bottom: 20%; right: 10%; width: 320px; transform: rotate(4deg); animation: floatUi2 15s infinite ease-in-out alternate; }
         @keyframes floatUi1 { 0% { transform: translateY(0) rotate(-6deg); } 100% { transform: translateY(-30px) rotate(-2deg); } }
         @keyframes floatUi2 { 0% { transform: translateY(0) rotate(4deg); } 100% { transform: translateY(-40px) rotate(8deg); } }
         
-        /* Announcement Badge */
         .hero-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 18px; margin-bottom: 25px; background: white; border: 1px solid rgba(99, 102, 241, 0.2); border-radius: 50px; color: var(--primary-color); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1); }
-        .hero h1 { font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 800; margin-bottom: 24px; color: var(--text-main); letter-spacing: -0.03em; line-height: 1.1; }
+        .hero h1 { font-size: clamp(2.5rem, 6vw, 5.5rem); font-weight: 800; margin-bottom: 24px; color: var(--text-main); letter-spacing: -0.03em; line-height: 1.1; }
         
-        /* Animated Gradient Text */
         .animated-text { background: linear-gradient(to right, #6366f1, #06b6d4, #ec4899, #6366f1); background-size: 200% auto; color: transparent; -webkit-background-clip: text; background-clip: text; animation: gradientMove 5s linear infinite; }
         @keyframes gradientMove { 0% { background-position: 0% center; } 100% { background-position: 200% center; } }
         .hero p { font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 40px auto; font-weight: 500; }
@@ -122,7 +116,9 @@
         .nav-btn.active { background-color: white; color: var(--primary-color); box-shadow: 0 4px 10px rgba(0,0,0,0.03); border: 1px solid rgba(255,255,255,0.8); }
 
         .main-content { flex: 1; height: 100%; overflow-y: auto; padding-right: 15px; padding-bottom: 40px; transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
-        .prompt-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 35px; align-content: flex-start; }
+        
+        /* FIX: Prevents grids from overflowing on mobile */
+        .prompt-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr)); gap: 35px; align-content: flex-start; }
         .container.show-playground .prompt-grid { grid-template-columns: 1fr; }
 
         .card { background-color: var(--card-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--card-border); border-radius: 24px; padding: 30px; box-shadow: var(--shadow-colored); display: flex; flex-direction: column; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s, border-color 0.4s; opacity: 0; }
@@ -162,24 +158,50 @@
         .pg-copy-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(99,102,241,0.4); }
         .pg-copy-btn.copied { background: #10b981; }
 
-        /* Toast & Animations */
         .toast { position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%) translateY(100px); background: var(--accent-gradient); color: white; padding: 14px 28px; border-radius: 50px; font-weight: 600; box-shadow: 0 20px 40px rgba(236, 72, 153, 0.3); opacity: 0; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); z-index: 100; display: flex; align-items: center; gap: 8px;}
         .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+        
         @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-10px); } 60% { transform: translateY(-5px); } }
         @keyframes fadeUpIn { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
         .animate-card { animation: fadeUpIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 
+        /* ================= MOBILE OPTIMIZATION ================= */
         @media (max-width: 1100px) { 
             body { overflow-y: auto; height: auto; }
-            .hero { position: absolute; }
+            .hero { position: fixed; }
             
-            .main-header { width: calc(100% - 32px); justify-content: center; }
-            .tagline-text { display: none; }
+            /* Mobile Header Adjustments */
+            .main-header { width: calc(100% - 20px); padding: 12px 20px; top: 10px; justify-content: center; border-radius: 16px;}
+            .header-logo { font-size: 1.2rem; }
+            .tagline-text { display: none; } /* Hide tagline to keep logo centered cleanly */
 
-            .container { flex-direction: column; padding: 120px 20px 40px 20px; height: auto; } 
-            .sidebar, .main-content { width: 100%; height: auto; overflow-y: visible; padding-right: 0; } 
-            .container.show-playground .playground { width: 100%; position: static; max-height: none; transform: none; }
+            .container { flex-direction: column; padding: 90px 15px 40px 15px; height: auto; gap: 20px; } 
+            
+            /* Sidebar becomes a swipeable horizontal row */
+            .sidebar { width: 100%; height: auto; overflow-y: visible; padding-right: 0; padding-bottom: 10px;}
+            .sidebar h2 { margin-bottom: 10px; padding-left: 5px; }
+            #category-nav { display: flex; overflow-x: auto; gap: 10px; padding-bottom: 5px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+            #category-nav::-webkit-scrollbar { display: none; }
+            .nav-btn { width: auto; white-space: nowrap; margin-bottom: 0; padding: 8px 16px; font-size: 0.85rem; }
+
+            .main-content { width: 100%; height: auto; overflow-y: visible; padding-right: 0; } 
+            .prompt-grid { gap: 20px; }
+            
+            /* Tighter card padding for mobile */
+            .card { padding: 20px; border-radius: 16px; }
+            .card h3 { font-size: 1.2rem; }
+            .card p.use-case { font-size: 0.85rem; margin-bottom: 15px; }
+            .code-block { padding: 15px; border-radius: 12px; }
+
+            .container.show-playground .playground { width: 100%; position: static; max-height: none; transform: none; padding: 20px; border-radius: 16px; margin-top: 10px; }
             .floating-ui { display: none; } 
+        }
+
+        /* Extra small phones */
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 2.2rem; margin-bottom: 15px; }
+            .hero p { font-size: 1rem; margin-bottom: 30px; padding: 0 10px; }
+            .hero-btn { font-size: 1rem; padding: 15px 30px; }
         }
     </style>
 </head>
@@ -190,17 +212,14 @@
     <div class="ambient-orb orb-3"></div>
 
     <header id="main-header" class="main-header">
-        
         <div class="header-logo">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color)"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
             Smart <span>Prompt Library</span>
         </div>
-
         <div class="tagline-text">
             Loved by creators worldwide 
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
         </div>
-
     </header>
 
     <section class="hero" id="splash-screen">
@@ -287,7 +306,6 @@
                 splashActive = false;
                 hero.classList.add('fade-out');
                 
-                // VISIBLE INSTANTLY: No longer waiting inside the setTimeout
                 mainHeader.classList.add('visible');
                 
                 setTimeout(() => {
@@ -340,7 +358,11 @@
                         renderPrompts(category === 'All' ? allPrompts : allPrompts.filter(p => p.category === category));
                         
                         libraryContainer.classList.remove('show-playground');
-                        mainScrollArea.scrollTo({ top: 0, behavior: 'smooth' });
+                        
+                        // Mobile fix: don't scroll top if we are already viewing the grid
+                        if(window.innerWidth > 1100) {
+                            mainScrollArea.scrollTo({ top: 0, behavior: 'smooth' });
+                        }
                     });
                     nav.appendChild(btn);
                 });
@@ -424,7 +446,14 @@
                     pgInputsContainer.innerHTML = `<p style="color: var(--text-muted); font-size: 0.85rem; font-style: italic;">No variables detected. You can edit the prompt directly below.</p>`;
                 }
 
-                mainScrollArea.scrollTo({ top: 0, behavior: 'smooth' });
+                if(window.innerWidth > 1100) {
+                    mainScrollArea.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    // On mobile, scroll down to the playground section automatically
+                    setTimeout(() => {
+                        document.getElementById('playground').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
             }
 
             closePgBtn.addEventListener('click', () => {
